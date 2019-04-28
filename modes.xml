@@ -23,7 +23,7 @@
       <program name="lrx-proc">
         <file name="wad-eng.autolex.bin"/>
       </program>
-      <program name="apertium-transfer -b">
+      <!--<program name="apertium-transfer -b">
         <file name="apertium-wad-eng.wad-eng.t1x"/>
         <file name="wad-eng.t1x.bin"/>
       </program>
@@ -34,6 +34,10 @@
       <program name="apertium-postchunk">
         <file name="apertium-wad-eng.wad-eng.t3x"/>
         <file name="wad-eng.t3x.bin"/>
+      </program>-->
+      <program name="python3">
+        <file name="glr_parser.py"/>
+        <file name="apertium-wad-eng.wad-eng.rtx"/>
       </program>
       <program name="lt-proc $1">
         <file name="wad-eng.autogen.bin"/>
