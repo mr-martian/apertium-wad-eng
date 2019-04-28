@@ -6,6 +6,49 @@ n: _.gender.number ;
 det: _.definite.gender.number;
 sent: _ ;
 
-N.gender.number -> 1: %@n {1} ;
-NP.gender -> 1: @det %N {1(gender=2.gender, number=2.number) _1 2} ;
+!N.gender.number -> 1: %@n {1} ;
+!NP.gender -> 1: @det %N {1(gender=2.gender, number=2.number) _1 2} ;
 
+Nadj-> 1: @n @adj {2 _1 1} |
+     1: @n {1} |
+     1: @n ve@ess @adj {1 _1 that@prn.rel.an.mf.sp be@vbser.pres.p3.sg 3}|
+     1: @n ve@ess @n {1 _1 that@prn.rel.an.mf.sp be@vbser.pres.p3.sg a@det.ind.sg 3};
+!Think about how we want to deal with the adjectives that are listed only as verbs
+
+! sometimes the rel clause falls outside of the DetP
+
+detbit-> 1: @det {1} |
+       1:@det @num {1 _1 2}|
+       1: @det @adj {2 _1 1};
+!think about how we want to classify the quantifiers like all, cuz now they're adj
+!plural and singular markers like si and i
+
+NP-> 1: Nadj detbit {2 1};
+!I think we might need a way to deal with adjectives that follow the det and are classed as v
+
+vbit-> 1: @v {1}|
+       1: @v @v {1 _1 and@cnjcoo 2};
+
+VP-> 1: NP vbit NP {1 _1 2 _2 3}|
+     1: NP vbit {1 _1 2};
+
+PP-> 1: @pr @NP {1 _1 2};
+!What happened to those weird stackable prepositions or whatever they were
+
+!SP-> 1: NP VP NP PP {1 _1 2 _2 3 _3 4}|
+     !1: NP VP NP {1 _1 2 _2 3}|
+     !1: NP VP PP {1 _1 2 _2 3}|
+     !1: NP VP {1 _1 2};
+! don't forget applicative causative and questions
+
+!topicalizers
+
+!Recovering dropped prepositions
+
+!deal with also and other conjunctions
+
+!multiword blocks to translate?
+
+!ve being used to make true adjectives verbs
+
+!i asan arbitrary object aka antipassive
