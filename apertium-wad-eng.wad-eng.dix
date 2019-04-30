@@ -163,7 +163,7 @@
       <e><p><l>mua<s n="adj"/></l><r>man<s n="n"/></r></p></e>
       <e><p><l>mumuya<s n="adj"/></l><r>asleep<s n="adj"/></r></p></e>
       <e><p><l>muyanau<s n="adj"/></l><r>conceited<s n="adj"/></r></p></e>
-      <e><p><l>ŋaŋgau<s n="adj"/></l><r>confuse<s n="vblex"/><s n="past"/></r></p></e>
+      <e><p><l>nganggau<s n="adj"/></l><r>confuse<s n="vblex"/><s n="past"/></r></p></e>
       <e><p><l>nukwai<s n="adj"/></l><r>yellow<s n="adj"/><s n="sint"/></r></p></e>
       <e><p><l>onate<s n="adj"/></l><r>generous<s n="adj"/></r></p></e>
       <e><p><l>onu<s n="adj"/></l><r>full<s n="adj"/><s n="sint"/></r></p></e>
@@ -347,7 +347,7 @@
       <e><p><l>amoi<s n="n"/></l><r>aunt<s n="n"/></r></p></e>
       <e><p><l>amor<s n="n"/></l><r>kangaroo<s n="n"/></r></p></e>
       <e><p><l>amumar<s n="n"/></l><r>fly<s n="n"/></r></p></e>
-      <e><p><l>amuŋgeri<s n="n"/></l><r>sago<s n="n"/></r></p></e>
+      <e><p><l>amunggeri<s n="n"/></l><r>sago<s n="n"/></r></p></e>
       <e><p><l>ana<s n="n"/></l><r>sago<s n="n"/></r></p></e>
       <e><p><l>ana sasinai<s n="n"/></l><r>sago<s n="n"/></r></p></e>
       <e><p><l>ana su<s n="n"/></l><r>basket<s n="n"/></r></p></e>
@@ -355,9 +355,9 @@
       <e><p><l>anambet<s n="n"/></l><r>cold<s n="adj"/><s n="sint"/></r></p></e>
       <e><p><l>anana<s n="n"/></l><r>ant<s n="n"/></r></p></e>
       <e><p><l>anana kepai<s n="n"/></l><r>*k</r></p></e>
-      <e><p><l>anaŋganai<s n="n"/></l><r>bait<s n="n"/></r></p></e>
-      <e><p><l>anaŋgas<s n="n"/></l><r>*k</r></p></e>
-      <e><p><l>anaŋgemo<s n="n"/></l><r>*k</r></p></e>
+      <e><p><l>anangganai<s n="n"/></l><r>bait<s n="n"/></r></p></e>
+      <e><p><l>ananggas<s n="n"/></l><r>*k</r></p></e>
+      <e><p><l>ananggemo<s n="n"/></l><r>*k</r></p></e>
       <e><p><l>anasani<s n="n"/></l><r>oyster<s n="n"/></r></p></e>
       <e><p><l>anda<s n="n"/></l><r>*mango</r></p></e>
       <e><p><l>anda<s n="n"/></l><r>crown<s n="n"/><g/><b/>of<b/>thorns</r></p></e>
@@ -368,10 +368,10 @@
       <e><p><l>andori katu<s n="n"/></l><r>*k</r></p></e>
       <e><p><l>andori pimasa<s n="n"/></l><r>*k</r></p></e>
       <e><p><l>andori vesuwa<s n="n"/></l><r>*guava</r></p></e>
-      <e><p><l>aŋgadi<s n="n"/></l><r>coconut<s n="n"/></r></p></e>
-      <e><p><l>aŋgadi karu<s n="n"/></l><r>coconut<s n="n"/></r></p></e>
-      <e><p><l>aŋgamau<s n="n"/></l><r>dog<s n="n"/></r></p></e>
-      <e><p><l>aŋgara<s n="n"/></l><r>lime<s n="n"/></r></p></e>
+      <e><p><l>anggadi<s n="n"/></l><r>coconut<s n="n"/></r></p></e>
+      <e><p><l>anggadi karu<s n="n"/></l><r>coconut<s n="n"/></r></p></e>
+      <e><p><l>anggamau<s n="n"/></l><r>dog<s n="n"/></r></p></e>
+      <e><p><l>anggara<s n="n"/></l><r>lime<s n="n"/></r></p></e>
       <e><p><l>aniai<s n="n"/></l><r>rat<s n="n"/></r></p></e>
       <e><p><l>aniai kakopa<s n="n"/></l><r>forest<s n="adj"/></r></p></e>
       <e><p><l>anibar<s n="n"/></l><r>*k</r></p></e>
@@ -432,7 +432,7 @@
       <e><p><l>barimu<s n="n"/></l><r>*k</r></p></e>
       <e><p><l>bata<s n="n"/></l><r>large<s n="adj"/><s n="sint"/></r></p></e>
       <e><p><l>baya<s n="n"/></l><r>*midrib</r></p></e>
-      <e><p><l>biaŋgaina<s n="n"/></l><r>large<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>bianggaina<s n="n"/></l><r>large<s n="adj"/><s n="sint"/></r></p></e>
       <e><p><l>bibiya<s n="n"/></l><r>small<s n="adj"/><s n="sint"/></r></p></e>
       <e><p><l>botol<s n="n"/></l><r>bottle<s n="n"/></r></p></e>
       <e><p><l>buai<s n="n"/></l><r>*decorum</r></p></e>
@@ -448,7 +448,7 @@
       <e><p><l>dia rumit<s n="n"/></l><r>reef<s n="n"/></r></p></e>
       <e><p><l>dia vesovina<s n="n"/></l><r>smoke<s n="vblex"/><s n="past"/></r></p></e>
       <e><p><l>dia vesovina<s n="n"/></l><r>smoke<s n="vblex"/><s n="past"/></r></p></e>
-      <e><p><l>diaŋgariria<s n="n"/></l><r>crocodile<s n="n"/></r></p></e>
+      <e><p><l>dianggariria<s n="n"/></l><r>crocodile<s n="n"/></r></p></e>
       <e><p><l>diasinia<s n="n"/></l><r>crocodile<s n="n"/></r></p></e>
       <e><p><l>die<s n="n"/></l><r>low<b/>tide<s n="n"/></r></p></e>
       <e><p><l>die diru<s n="n"/></l><r>nighttime<s n="n"/></r></p></e>
@@ -472,7 +472,7 @@
       <e><p><l>ember<s n="n"/></l><r>bucket<s n="n"/></r></p></e>
       <e><p><l>enderek<s n="n"/></l><r>*morinda</r></p></e>
       <e><p><l>enderek buo<s n="n"/></l><r>*morinda</r></p></e>
-      <e><p><l>eŋgerek<s n="n"/></l><r>*morinda</r></p></e>
+      <e><p><l>enggerek<s n="n"/></l><r>*morinda</r></p></e>
       <e><p><l>gaja<s n="n"/></l><r>elephant<s n="n"/></r></p></e>
       <e><p><l>gardus<s n="n"/></l><r>box<s n="n"/></r></p></e>
       <e><p><l>glas<s n="n"/></l><r>glass<s n="n"/></r></p></e>
@@ -480,7 +480,7 @@
       <e><p><l>imboni<s n="n"/></l><r>beetle<s n="n"/></r></p></e>
       <e><p><l>ina<s n="n"/></l><r>sago<s n="n"/></r></p></e>
       <e><p><l>inar<s n="n"/></l><r>widow<s n="n"/></r></p></e>
-      <e><p><l>iŋgeresi<s n="n"/></l><r>cockroach<s n="n"/></r></p></e>
+      <e><p><l>inggeresi<s n="n"/></l><r>cockroach<s n="n"/></r></p></e>
       <e><p><l>jendela<s n="n"/></l><r>window<s n="n"/></r></p></e>
       <e><p><l>kabiebar<s n="n"/></l><r>lightning<s n="n"/></r></p></e>
       <e><p><l>kabubui<s n="n"/></l><r>bamboo<s n="n"/></r></p></e>
@@ -505,7 +505,7 @@
       <e><p><l>kamuavu<s n="n"/></l><r>starfish<s n="n"/></r></p></e>
       <e><p><l>kamumi<s n="n"/></l><r>mosquito<s n="n"/></r></p></e>
       <e><p><l>kandai<s n="n"/></l><r>spine<s n="n"/></r></p></e>
-      <e><p><l>kandaŋ<s n="n"/></l><r>cage<s n="n"/></r></p></e>
+      <e><p><l>kandang<s n="n"/></l><r>cage<s n="n"/></r></p></e>
       <e><p><l>kanisu<s n="n"/></l><r>saliva<s n="n"/></r></p></e>
       <e><p><l>kanyambe<s n="n"/></l><r>*k</r></p></e>
       <e><p><l>kapatieiti<s n="n"/></l><r>house<s n="n"/></r></p></e>
@@ -568,7 +568,7 @@
       <e><p><l>kowo-kowo<s n="n"/></l><r>*k</r></p></e>
       <e><p><l>kuau<s n="n"/></l><r>bucket<s n="n"/></r></p></e>
       <e><p><l>kuda<s n="n"/></l><r>horse<s n="n"/></r></p></e>
-      <e><p><l>kuduŋ<s n="n"/></l><r>dirty<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>kudung<s n="n"/></l><r>dirty<s n="adj"/><s n="sint"/></r></p></e>
       <e><p><l>kumami<s n="n"/></l><r>sea<s n="n"/></r></p></e>
       <e><p><l>kumu-kumu<s n="n"/></l><r>*k</r></p></e>
       <e><p><l>kurumi<s n="n"/></l><r>valley<s n="n"/></r></p></e>
@@ -591,7 +591,7 @@
       <e><p><l>mandiu buo<s n="n"/></l><r>*k</r></p></e>
       <e><p><l>maneta<s n="n"/></l><r>friend<s n="n"/></r></p></e>
       <e><p><l>mani<s n="n"/></l><r>oil<s n="adj"/></r></p></e>
-      <e><p><l>mani aŋgadi<s n="n"/></l><r>coconut<b/>oil<s n="n"/></r></p></e>
+      <e><p><l>mani anggadi<s n="n"/></l><r>coconut<b/>oil<s n="n"/></r></p></e>
       <e><p><l>mani kakopa<s n="n"/></l><r>kerosene<s n="n"/></r></p></e>
       <e><p><l>maniai<s n="n"/></l><r>wasp<s n="n"/></r></p></e>
       <e><p><l>maniai kakopa<s n="n"/></l><r>ground<s n="n"/></r></p></e>
@@ -631,10 +631,10 @@
       <e><p><l>nawa<s n="n"/></l><r>net<s n="adv"/></r></p></e>
       <e><p><l>neta katu<s n="n"/></l><r>young<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
       <e><p><l>neta vava<s n="n"/></l><r>old<s n="adj"/><s n="sint"/><s n="comp"/></r></p></e>
-      <e><p><l>ŋiŋgisi<s n="n"/></l><r>cricket<s n="n"/></r></p></e>
-      <e><p><l>ŋoŋgo<s n="n"/></l><r>*k</r></p></e>
+      <e><p><l>nginggisi<s n="n"/></l><r>cricket<s n="n"/></r></p></e>
+      <e><p><l>ngonggo<s n="n"/></l><r>*k</r></p></e>
       <e><p><l>niau<s n="n"/></l><r>cat<s n="n"/></r></p></e>
-      <e><p><l>niŋguai<s n="n"/></l><r>turmeric<s n="n"/></r></p></e>
+      <e><p><l>ningguai<s n="n"/></l><r>turmeric<s n="n"/></r></p></e>
       <e><p><l>niniai<s n="n"/></l><r>*nibong</r></p></e>
       <e><p><l>nioi<s n="n"/></l><r>knife<s n="n"/></r></p></e>
       <e><p><l>noni<s n="n"/></l><r>*k</r></p></e>
@@ -802,7 +802,7 @@
       <e><p><l>sereni<s n="n"/></l><r>*papaya</r></p></e>
       <e><p><l>sereni rau<s n="n"/></l><r>*papaya</r></p></e>
       <e><p><l>setinunuma<s n="n"/></l><r>gun<s n="n"/></r></p></e>
-      <e><p><l>siaŋgono<s n="n"/></l><r>*pandan</r></p></e>
+      <e><p><l>sianggono<s n="n"/></l><r>*pandan</r></p></e>
       <e><p><l>sien<s n="n"/></l><r>god<s n="n"/></r></p></e>
       <e><p><l>sievis<s n="n"/></l><r>rainbow<s n="n"/></r></p></e>
       <e><p><l>sikop<s n="n"/></l><r>shovel<s n="n"/></r></p></e>
@@ -814,7 +814,7 @@
       <e><p><l>sina<s n="n"/></l><r>spine<s n="n"/></r></p></e>
       <e><p><l>sina<s n="n"/></l><r>bone<s n="n"/></r></p></e>
       <e><p><l>since<s n="n"/></l><r>girl<s n="n"/></r></p></e>
-      <e><p><l>siŋa<s n="n"/></l><r>lion<s n="n"/></r></p></e>
+      <e><p><l>singa<s n="n"/></l><r>lion<s n="n"/></r></p></e>
       <e><p><l>sinia<s n="n"/></l><r>mother<s n="n"/></r></p></e>
       <e><p><l>sinia buai<s n="n"/></l><r>father<s n="n"/></r></p></e>
       <e><p><l>sinia katu<s n="n"/></l><r>mother<s n="n"/></r></p></e>
@@ -879,7 +879,7 @@
       <e><p><l>tiup<s n="n"/></l><r>billow<s n="vblex"/><s n="pprs"/></r></p></e>
       <e><p><l>toko<s n="n"/></l><r>store<s n="n"/></r></p></e>
       <e><p><l>tomboro<s n="n"/></l><r>owl<s n="n"/></r></p></e>
-      <e><p><l>toŋgiau<s n="n"/></l><r>floor<s n="n"/></r></p></e>
+      <e><p><l>tonggiau<s n="n"/></l><r>floor<s n="n"/></r></p></e>
       <e><p><l>toples<s n="n"/></l><r>jar<s n="n"/></r></p></e>
       <e><p><l>tu<s n="n"/></l><r>fur<s n="n"/></r></p></e>
       <e><p><l>tu<s n="n"/></l><r>bay<s n="n"/></r></p></e>
@@ -938,7 +938,7 @@
       <e><p><l>wamesa<s n="n"/></l><r>*pufferfish</r></p></e>
       <e><p><l>wana<s n="n"/></l><r>wind<s n="n"/></r></p></e>
       <e><p><l>wana saso<s n="n"/></l><r>storm<s n="n"/></r></p></e>
-      <e><p><l>waŋgar<s n="n"/></l><r>mouse<s n="n"/></r></p></e>
+      <e><p><l>wanggar<s n="n"/></l><r>mouse<s n="n"/></r></p></e>
       <e><p><l>wanunu<s n="n"/></l><r>shadow<s n="n"/></r></p></e>
       <e><p><l>war<s n="n"/></l><r>root<s n="n"/></r></p></e>
       <e><p><l>wara tu<s n="n"/></l><r>body<s n="n"/></r></p></e>
@@ -949,10 +949,10 @@
       <e><p><l>wevewi<s n="n"/></l><r>hill<s n="n"/></r></p></e>
       <e><p><l>wis<s n="n"/></l><r>mountain<s n="n"/></r></p></e>
       <e><p><l>wisa<s n="n"/></l><r>grandmother<s n="n"/></r></p></e>
-      <e><p><l>womiŋgo<s n="n"/></l><r>sorrow<s n="n"/></r></p></e>
+      <e><p><l>wominggo<s n="n"/></l><r>sorrow<s n="n"/></r></p></e>
       <e><p><l>wona<s n="n"/></l><r>dog<s n="n"/></r></p></e>
-      <e><p><l>woŋgei<s n="n"/></l><r>*cassowary</r></p></e>
-      <e><p><l>woŋgia<s n="n"/></l><r>*gunwhales</r></p></e>
+      <e><p><l>wonggei<s n="n"/></l><r>*cassowary</r></p></e>
+      <e><p><l>wonggia<s n="n"/></l><r>*gunwhales</r></p></e>
       <e><p><l>wonioi<s n="n"/></l><r>*k</r></p></e>
       <e><p><l>wopi<s n="n"/></l><r>gall<s n="n"/></r></p></e>
       <e><p><l>wor<s n="n"/></l><r>sun<s n="n"/></r></p></e>
@@ -1100,7 +1100,7 @@
       <e><p><l>mamaya<s n="v"/></l><r>shy<s n="adj"/><s n="sint"/></r></p></e>
       <e><p><l>mamu<s n="v"/></l><r>fight<s n="n"/></r></p></e>
       <e><p><l>manau<s n="v"/></l><r>already<s n="adv"/></r></p></e>
-      <e><p><l>maŋgar<s n="v"/></l><r>yell<s n="vblex"/></r></p></e>
+      <e><p><l>manggar<s n="v"/></l><r>yell<s n="vblex"/></r></p></e>
       <e><p><l>marandi<s n="v"/></l><r>wear<s n="n"/></r></p></e>
       <e><p><l>marariat<s n="v"/></l><r>soft<s n="adj"/><s n="sint"/></r></p></e>
       <e><p><l>mararieti<s n="v"/></l><r>char<s n="vblex"/><s n="past"/></r></p></e>
@@ -1139,7 +1139,7 @@
       <e><p><l>nei<s n="v"/></l><r>have<s n="vbhaver"/></r></p></e>
       <e><p><l>newe<s n="v"/></l><r>have<s n="vbhaver"/></r></p></e>
       <e><p><l>newi<s n="v"/></l><r>have<s n="vbhaver"/></r></p></e>
-      <e><p><l>ŋaŋgat<s n="v"/></l><r>bother<s n="vblex"/></r></p></e>
+      <e><p><l>nganggat<s n="v"/></l><r>bother<s n="vblex"/></r></p></e>
       <e><p><l>nomu<s n="v"/></l><r>you<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
       <e><p><l>nunu<s n="v"/></l><r>grill<s n="n"/></r></p></e>
       <e><p><l>o<s n="v"/></l><r>will<s n="n"/></r></p></e>
