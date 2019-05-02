@@ -3,28 +3,29 @@ number = sg pl ;
 definite = def ind ;
 
 !don't think we actually need to have the stuff directly below here (though the det thing)
-n: _ ;
-det: _ ;
+n: _.number ;
+det: _.definite ;
 sent: _ ;
+cm: _ ;
 
 !N.gender.number -> 1: %@n {1} ;
 !NP.gender -> 1: @det %N {1(gender=2.gender, number=2.number) _1 2} ;
 
-Nadj-> 1: @n @adj {2 _1 1} |
-     1: @n {1} |
+Nadj.number-> 1: @n @adj {2 _1 1(number=$number)} |
+     0.2: @n {1(number=$number)} |
      1: @n ve@ess @adj {1 _1 that@prn.rel.an.mf.sp be@vbser.pres.p3.sg 3}|
      1: @n ve@ess @n {1 _1 that@prn.rel.an.mf.sp be@vbser.pres.p3.sg a@det.ind.sg 3};
 !Think about how we want to deal with the adjectives that are listed only as verbs
 
 ! sometimes the rel clause falls outside of the DetP
 
-detbit-> 1: @det {1} |
-       1:@det @num {1 _1 2}|
-       1: @det @adj {2 _1 1};
+detbit.number -> 1.1: %@det {1} |
+                 1: @det %@num {1 _1 2}|
+                 1: %@det @adj {2 _1 1};
 !think about how we want to classify the quantifiers like all, cuz now they're adj
 !plural and singular markers like si and i
 
-NP-> 1: Nadj detbit {2 1};
+NP-> 1: Nadj detbit {2 _1 1(number=sg)};
 !I think we might need a way to deal with adjectives that follow the det and are classed as v
 
 vbit-> 1: @v {1}|

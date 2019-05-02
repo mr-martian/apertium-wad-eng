@@ -24,7 +24,7 @@ class Lexical:
         self.get_attrs()
     def __repr__(self):
         return 'Lexical(%s/%s, %s/%s)' % (self.t_lem, self.t_lem, self.s_tags, self.t_tags)
-    s_regex = re.compile('\\^([^<>]+)((?:<[^<>]+>)+)/([^<>]+)((?:<[^<>]+>)+)\\$')
+    s_regex = re.compile('\\^([^<>]+)((?:<[^<>]+>)*)/([^<>]+)((?:<[^<>]+>)*)\\$')
     f_regex = re.compile('(\\w*)@([\\w.$]*)')
     def get_attrs(self):
         for k in Attrs:
@@ -112,7 +112,7 @@ class Syntax:
         self.children = children
         self.updates = updates
     def __repr__(self):
-        return 'Syntax(%s, %s)' % (self.ntype, self.children)
+        return 'Syntax(%s, %s, %s)' % (self.ntype, self.children, self.updates)
     def output(self, vrs):
         allvrs = vrs
         allvrs.update(self.vrs)
@@ -313,5 +313,7 @@ if __name__ == '__main__':
     for a in add:
         parses = Rule.apply_all(parses)
         parses = [(x[0]+a, x[1]) for x in parses]
-    out = min(parses, key=lambda p: p[1] + 2*len(p[0]))[0]
+    parses = Rule.apply_all(parses)
+    parses = [(x,y+(3*len(x))) for x,y in parses]
+    out = min(parses, key=lambda p: p[1])[0]
     print(''.join(x.output({}) for x in out))
