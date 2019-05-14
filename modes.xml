@@ -3,6 +3,18 @@
 
   <!-- wad → eng -->
 
+  <mode name="wad-eng-latex" install="yes">
+    <pipeline>
+      <program name="python3 latex_gloss.py"/>
+    </pipeline>
+  </mode>
+
+  <mode name="wad-eng-eaf" install="yes">
+    <pipeline>
+      <program name="python3 eaf_gloss.py"/>
+    </pipeline>
+  </mode>
+
   <mode name="wad-eng" install="yes" gendebug="yes">
     <pipeline>
       <program name="lt-proc -w">
