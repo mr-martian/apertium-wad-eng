@@ -1,0 +1,94 @@
+wad and English: `apertium-wad-eng`
+===============================================================================
+
+This is an Apertium language pair for translating between wad and
+English. What you can use this language package for:
+
+* Translating between wad and English
+* Morphological analysis of wad and English
+* Part-of-speech tagging of wad and English
+
+For information on the latter two points, see subheading "For more
+information" below.
+
+Requirements
+-------------------------------------------------------------------------------
+
+You will need the following software installed:
+
+* lttoolbox (>= 3.3.0)
+* apertium (>= 3.3.0)
+* vislcg3 (>= 0.9.9.10297)
+* hfst (>= 3.8.2)
+* apertium-wad
+* apertium-eng
+
+If this does not make any sense, we recommend you look at: www.apertium.org.
+
+Compiling
+-------------------------------------------------------------------------------
+
+Given the requirements being installed, you should be able to just run:
+
+```console
+$ ./configure
+$ make
+# make install
+```
+
+You can use `./autogen.sh` instead of `./configure` in case you're compiling
+from source. If you installed any prerequisite language packages using a
+`--prefix` with `./configure`, make sure to use the same `--prefix` when running
+`./configure` here.
+
+Testing
+-------------------------------------------------------------------------------
+
+If you are in the source directory after running make, the following
+commands should work:
+
+```console
+$ echo "TODO test sentence 1" | apertium -d . wad-eng
+TODO test translated sentence 1
+
+$ echo "TODO test sentence 2" | apertium -d . eng-wad
+TODO test translated sentence 2
+```
+
+After installing somewhere in `$PATH`, you should be able to do e.g.
+
+```console
+$ echo "TODO test sentence 1" | apertium wad-eng
+TODO test translated sentence 1
+```
+
+Files and data
+-------------------------------------------------------------------------------
+
+* [`apertium-wad-eng.wad-eng.dix`](apertium-wad-eng.wad-eng.dix) - Bilingual dictionary
+* [`apertium-wad-eng.wad-eng.rtx`](apertium-wad-eng.wad-eng.rtx) - Structural transfer rules for translating into English
+* [`apertium-wad-eng.eng-wad.rtx`](apertium-wad-eng.eng-wad.rtx) - Structural transfer rules for translating into wad
+* [`apertium-wad-eng.wad-eng.lrx`](apertium-wad-eng.wad-eng.lrx) - Lexical selection rules for translating into English
+* [`apertium-wad-eng.eng-wad.lrx`](apertium-wad-eng.eng-wad.lrx) - Lexical selection rules for translating into wad
+* [`apertium-wad-eng.wad-eng.lsx`](apertium-wad-eng.wad-eng.lsx) - Discontiguous multiword rules for translating into English
+* [`apertium-wad-eng.eng-wad.lsx`](apertium-wad-eng.eng-wad.lsx) - Discontiguous multiword rules for translating into wad
+* [`apertium-wad-eng.wad-eng.arx`](apertium-wad-eng.wad-eng.arx) - Anaphora resolution rules for translating into English
+* [`apertium-wad-eng.eng-wad.arx`](apertium-wad-eng.eng-wad.arx) - Anaphora resolution rules for translating into wad
+* [`modes.xml`](modes.xml) - Translation modes
+
+For more information
+-------------------------------------------------------------------------------
+
+* http://wiki.apertium.org/wiki/Installation
+* http://wiki.apertium.org/wiki/apertium-wad-eng
+* http://wiki.apertium.org/wiki/Using_an_lttoolbox_dictionary
+
+Help and support
+-------------------------------------------------------------------------------
+
+If you need help using this language pair or data, you can contact:
+
+* Mailing list: apertium-stuff@lists.sourceforge.net
+* IRC: `#apertium` on irc.freenode.net (irc://irc.freenode.net/#apertium)
+
+See also the file [`AUTHORS`](AUTHORS), included in this distribution.
