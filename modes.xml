@@ -10,12 +10,12 @@
       </program>
 
 
-      <program name="cg-proc -w">
+      <program name="cg-proc -w -1 -n">
         <file name="wad-eng.rlx.bin"/>
       </program>
-      <program name="apertium-tagger -g $2">
+      <!--<program name="apertium-tagger -g $2">
         <file name="wad-eng.prob"/>
-      </program>
+      </program>-->
       <program name="lsx-proc">
         <file name="wad-eng.autoseq.bin"/>
       </program>
@@ -56,12 +56,12 @@
       </program>
 
 
-      <program name="cg-proc -w">
+      <program name="cg-proc -w -1 -n">
         <file name="eng-wad.rlx.bin"/>
       </program>
-      <program name="apertium-tagger -g $2">
+      <!--<program name="apertium-tagger -g $2">
         <file name="eng-wad.prob"/>
-      </program>
+      </program>-->
 
       <program name="lsx-proc">
         <file name="eng-wad.autoseq.bin"/>
@@ -74,7 +74,7 @@
         <file name="eng-wad.autolex.bin"/>
       </program>
       <program name="apertium-anaphora">
-        <file name="apertium-eng-wad.eng-wad.arx"/>
+        <file name="apertium-wad-eng.eng-wad.arx"/>
       </program>
 
 

@@ -11,12 +11,13 @@ tense = pres past fut ifi pri fti;
 !! OUTPUT PATTERNS
 !!!!!!!!!!!!!!!
 
-n: _.gender.number;
+n: _.number;
 adj: _.gender.number;
 det_default: _.det_type;
 det_def: _.det_type.number;
 
 NP: _.number;
+DP: _;
 
 !!!!!!!!!!!!!!!
 !! TAG-REWRITE RULES
@@ -37,4 +38,7 @@ det: (if (1.det_type = def or 1.det_type = ind)
 !! REDUCTION RULES
 !!!!!!!!!!!!!!!
 
-NP -> n.$number adj { 2[gender=1.gender, number=1.number] _1 1 } ;
+NP -> %n adj { 2[gender=1.gender, number=1.number] _1 1 } |
+      %n { %1[number=(if ($number = sp) sg else $number)] } ;
+
+DP -> NP det { 2 _1 1[number=2.number] } ;

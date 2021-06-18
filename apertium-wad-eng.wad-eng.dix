@@ -7,11 +7,14 @@
     <!-- Define symbol definitions within <sdef> here. -->
     <sdef n="n"               c="Noun"/>
     <sdef n="np"              c="Proper noun"/>
+    <sdef n="v"               c="Verb"/>
     <sdef n="vblex"           c="Verb, lexical"/>
     <sdef n="vbmod"           c="Modal verb"/>
     <sdef n="vaux"            c="Auxiliary verb"/>
     <sdef n="vbser"           c="'To be' verb"/>
     <sdef n="vbhaver"         c="'To have' verb"/>
+    <sdef n="vbdo"            c="'To do' verb"/>
+    <sdef n="cnj"             c="Conjunction"/>
     <sdef n="cnjsub"          c="Subordinating conjunction"/>
     <sdef n="cnjcoo"          c="Co-ordinating conjunction"/>
     <sdef n="cnjadv"          c="Adverbial conjunction"/>
@@ -20,6 +23,9 @@
     <sdef n="ij"              c="Interjection"/>
     <sdef n="adj"             c="Adjective"/>
     <sdef n="prn"             c="Pronoun"/>
+    <sdef n="cmp"             c="Complementizer"/>
+    <sdef n="prt"             c="Particle"/>
+    <sdef n="loc"             c="Locative"/>
 
     <sdef n="attr"            c="Attributive"/>
     <sdef n="top"             c="Toponym"/>
@@ -44,6 +50,7 @@
     <sdef n="f"               c="Feminine"/>
     <sdef n="m"               c="Masculine"/>
     <sdef n="un"              c="No gender"/>
+    <sdef n="mf"              c="Indeterminate"/>
 
     <sdef n="sg"              c="Singular"/>
     <sdef n="du"              c="Dual"/>
@@ -56,6 +63,7 @@
     <sdef n="nom"             c="Nominative"/>
     <sdef n="acc"             c="Accusative"/>
     <sdef n="gen"             c="Genitive"/>
+    <sdef n="subj"            c="Subject"/>
 
     <sdef n="dem"             c="Demonstrative"/>
     <sdef n="itg"             c="Question word / interrogative"/>
@@ -65,12 +73,15 @@
 
     <sdef n="inf"             c="Infinitive"/>
     <sdef n="pres"            c="Present"/>
+    <sdef n="past"            c="Past"/>
     <sdef n="imp"             c="Imperative"/>
     <sdef n="pret"            c="Preterite"/>
     <sdef n="pp"              c="Perfect participle"/>
     <sdef n="pprs"            c="Present participle"/>
     <sdef n="pasv"            c="Passive"/>
     <sdef n="actv"            c="Active voice"/>
+    <sdef n="sep"             c="???"/>
+    <sdef n="pred"            c="predicative?"/>
 
     <sdef n="sint"            c="Synthetic (of adjectives)"/>
     <sdef n="pst"             c="Positive"/>
@@ -97,7 +108,1508 @@
 
    <section id="main" type="standard">
       <!-- Define entries within <e> here. -->
-      <e><p><l>house<s n="n"/></l><r>casa<s n="n"/><s n="f"/></r></p></e>
+      <e><p><l>ne<s n="det"/></l><r>the<s n="det"/><s n="def"/><s n="sp"/></r></p></e>
+      <e><p><l>pa<s n="det"/></l><r>the<s n="det"/><s n="def"/><s n="sp"/></r></p></e>
+      <e><p><l>wa<s n="det"/></l><r>the<s n="det"/><s n="def"/><s n="sp"/></r></p></e>
+      <e><p><l>pe<s n="det"/></l><r>some<s n="det"/><s n="qnt"/><s n="sp"/></r></p></e>
+      <e><p><l>nini<s n="dem"/></l><r>this<s n="det"/><s n="dem"/><s n="sg"/></r></p></e>
+      <!-- <e><p><l>ambesie<s n="adj"/></l><r>very<s n="adv"/><b/>delicious<s n="adj"/></r></p></e> -->
+      <e><p><l>anato<s n="adj"/></l><r>only<s n="adj"/></r></p></e>
+      <e><p><l>anato<s n="adj"/></l><r>just<s n="adv"/></r></p></e>
+      <e><p><l>aniona<s n="adj"/></l><r>sweet<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>arioi<s n="adj"/></l><r>long<s n="adv"/></r></p></e>
+      <e><p><l>asisi<s n="adj"/></l><r>silent<s n="adj"/></r></p></e>
+      <e><p><l>ate<s n="adj"/></l><r>good<s n="adv"/></r></p></e>
+      <e><p><l>ate<s n="adj"/></l><r>beautiful<s n="adj"/></r></p></e>
+      <e><p><l>avori<s n="adj"/></l><r>new<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>baba<s n="adj"/></l><r>big<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>baba<s n="adj"/></l><r>large<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>baba<s n="adj"/></l><r>wide<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>baba<s n="adj"/></l><r>parent<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>batoyar<s n="adj"/></l><r>thick<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>borai<s n="adj"/></l><r>a<b/>lot<s n="adv"/></r></p></e>
+      <e><p><l>borai<s n="adj"/></l><r>many<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
+      <e><p><l>diadi<s n="adj"/></l><r>become<s n="vblex"/></r></p></e>
+      <e><p><l>diadi<s n="adj"/></l><r>happen<s n="vblex"/></r></p></e>
+      <e><p><l>diru<s n="adj"/></l><r>dark<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>kake<s n="adj"/></l><r>green<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>kake<s n="adj"/></l><r>blue<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>karakuai<s n="adj"/></l><r>hard<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>karakuai<s n="adj"/></l><r>strong<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>karakuai<s n="adj"/></l><r>rough<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>karakuai<s n="adj"/></l><r>*rubbery</r></p></e>
+      <e><p><l>kasau<s n="adj"/></l><r>far<s n="adv"/></r></p></e>
+      <e><p><l>kasau<s n="adj"/></l><r>distance<s n="n"/></r></p></e>
+      <e><p><l>kasau<s n="adj"/></l><r>gap<s n="n"/></r></p></e>
+      <e><p><l>katu<s n="adj"/></l><r>small<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>kawawaru<s n="adj"/></l><r>lazy<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>kawawaru<s n="adj"/></l><r>lazy<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>komamasarei<s n="adj"/></l><r>funny<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>komok<s n="adj"/></l><r>cheap<s n="adj"/><s n="sint"/></r></p></e>
+      <!-- <e><p><l>komok<s n="adj"/></l><r>not<s n="adv"/><b/>good<s n="adv"/></r></p></e> -->
+      <e><p><l>kotar<s n="adj"/></l><r>fit<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>kotar<s n="adj"/></l><r>narrow<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>kotar<s n="adj"/></l><r>tight<s n="adv"/></r></p></e>
+      <e><p><l>kumwar<s n="adj"/></l><r>dark<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>kumwar<s n="adj"/></l><r>black<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>kuya<s n="adj"/></l><r>noisy<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>mabat<s n="adj"/></l><r>heavy<s n="adv"/></r></p></e>
+      <e><p><l>mamara<s n="adj"/></l><r>clean<s n="adv"/></r></p></e>
+      <e><p><l>mamara<s n="adj"/></l><r>clear<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>mamara<s n="adj"/></l><r>white<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>mani<s n="adj"/></l><r>conceited<s n="adj"/></r></p></e>
+      <e><p><l>mani<s n="adj"/></l><r>proud<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>manis<s n="adj"/></l><r>thin<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>maraba<s n="adj"/></l><r>*holey</r></p></e>
+      <e><p><l>maraba<s n="adj"/></l><r>tear<s n="vblex"/><s n="pp"/></r></p></e>
+      <e><p><l>marai<s n="adj"/></l><r>ripe<s n="adj"/></r></p></e>
+      <e><p><l>marandewa<s n="adj"/></l><r>healthy<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>marandewa<s n="adj"/></l><r>thriving<s n="adj"/></r></p></e>
+      <!-- <e><p><l>mararaba<s n="adj"/></l><r>full<s n="adj"/><s n="sint"/><b/>of<s n="pr"/><b/>hole<s n="n"/><s n="pl"/></r></p></e> -->
+      <e><p><l>marawas<s n="adj"/></l><r>beautiful<s n="adj"/></r></p></e>
+      <e><p><l>mariat<s n="adj"/></l><r>gentle<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>mariera<s n="adj"/></l><r>soft<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>marin<s n="adj"/></l><r>calm<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>maruwasi va<s n="adj"/></l><r>low<s n="adv"/></r></p></e>
+      <e><p><l>maruwasi va<s n="adj"/></l><r>weak<s n="adv"/></r></p></e>
+      <e><p><l>mas<s n="adj"/></l><r>hot<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>mas<s n="adj"/></l><r>savage<s n="n"/></r></p></e>
+      <e><p><l>mas bari<s n="adj"/></l><r>cruel<s n="adj"/></r></p></e>
+      <e><p><l>masabu<s n="adj"/></l><r>broken<s n="adj"/></r></p></e>
+      <e><p><l>masabu<s n="adj"/></l><r>crack<s n="vblex"/><s n="pp"/></r></p></e>
+      <e><p><l>masasabu<s n="adj"/></l><r>smash<s n="vblex"/><s n="pp"/></r></p></e>
+      <e><p><l>masasabu<s n="adj"/></l><r>shatter<s n="vblex"/><s n="pp"/></r></p></e>
+      <e><p><l>masasiepar<s n="adj"/></l><r>scatter<s n="vblex"/><s n="pp"/></r></p></e>
+      <e><p><l>masi tutira<s n="adj"/></l><r>like<s n="adj"/></r></p></e>
+      <e><p><l>masi tutira<s n="adj"/></l><r>fit<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>masiei<s n="adj"/></l><r>sharp<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>masise<s n="adj"/></l><r>like<s n="adj"/></r></p></e>
+      <e><p><l>matu<s n="adj"/></l><r>old<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>mei<s n="adj"/></l><r>interesting<s n="adj"/></r></p></e>
+      <e><p><l>meta<s n="adj"/></l><r>black<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>mirarebis<s n="adj"/></l><r>slippery<s n="adj"/></r></p></e>
+      <e><p><l>mua<s n="adj"/></l><r>man<s n="n"/></r></p></e>
+      <e><p><l>mua<s n="adj"/></l><r>male<s n="adj"/></r></p></e>
+      <!-- <e><p><l>mumuya<s n="adj"/></l><r>asleep<s n="adj"/><b/>(<s n="lpar"/><b/>limb<s n="n"/></r></p></e> -->
+      <e><p><l>muyanau<s n="adj"/></l><r>conceited<s n="adj"/></r></p></e>
+      <e><p><l>muyanau<s n="adj"/></l><r>proud<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>nganggau<s n="adj"/></l><r>confuse<s n="vblex"/><s n="past"/></r></p></e>
+      <e><p><l>nukwai<s n="adj"/></l><r>yellow<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>onate<s n="adj"/></l><r>generous<s n="adj"/></r></p></e>
+      <e><p><l>onu<s n="adj"/></l><r>full<s n="adj"/><s n="sint"/></r></p></e>
+      <!-- <e><p><l>paname<s n="adj"/></l><r>very<s n="adv"/><b/>fine<s n="adv"/></r></p></e> -->
+      <e><p><l>pau<s n="adj"/></l><r>a<b/>lot<s n="adv"/></r></p></e>
+      <e><p><l>pau<s n="adj"/></l><r>many<s n="det"/><s n="qnt"/><s n="pl"/></r></p></e>
+      <e><p><l>paya<s n="adj"/></l><r>strong<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>pepeya<s n="adj"/></l><r>quiet<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>piat<s n="adj"/></l><r>raw<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>pimasa<s n="adj"/></l><r>big<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>pimasa<s n="adj"/></l><r>large<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>pisavir<s n="adj"/></l><r>crazy<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>pota<s n="adj"/></l><r>sick<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>pota<s n="adj"/></l><r>hurt<s n="vblex"/></r></p></e>
+      <e><p><l>pumat<s n="adj"/></l><r>dull<s n="vblex"/></r></p></e>
+      <e><p><l>rariat<s n="adj"/></l><r>dirty<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>rauparare<s n="adj"/></l><r>thirsty<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>rawana<s n="adj"/></l><r>blue<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>remo<s n="adj"/></l><r>tired<s n="adj"/></r></p></e>
+      <e><p><l>remo<s n="adj"/></l><r>sleepy<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>retena<s n="adj"/></l><r>first<s n="adv"/></r></p></e>
+      <e><p><l>ribuai<s n="adj"/></l><r>kind<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>sair<s n="adj"/></l><r>smelly<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>sair<s n="adj"/></l><r>putrid<s n="adj"/></r></p></e>
+      <e><p><l>sair<s n="adj"/></l><r>pungent<s n="adj"/></r></p></e>
+      <e><p><l>saire<s n="adj"/></l><r>smell<s n="n"/></r></p></e>
+      <e><p><l>saire<s n="adj"/></l><r>putrid<s n="adj"/></r></p></e>
+      <e><p><l>sanaia<s n="adj"/></l><r>dry<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>sanandika<s n="adj"/></l><r>conceited<s n="adj"/></r></p></e>
+      <e><p><l>sanandika<s n="adj"/></l><r>proud<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>sane nei kariria<s n="adj"/></l><r>sad<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>sane sasera<s n="adj"/></l><r>indecisive<s n="adj"/></r></p></e>
+      <e><p><l>sane soi<s n="adj"/></l><r>sorrowful<s n="adj"/></r></p></e>
+      <e><p><l>sarap<s n="adj"/></l><r>pull<s n="n"/></r></p></e>
+      <e><p><l>sasuat<s n="adj"/></l><r>spicy<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>sava<s n="adj"/></l><r>cheap<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>savavir<s n="adj"/></l><r>arrogant<s n="adj"/></r></p></e>
+      <!-- <e><p><l>savavir<s n="adj"/></l><r>not<s n="adv"/><b/>calm<s n="adj"/><s n="sint"/></r></p></e> -->
+      <e><p><l>seseya<s n="adj"/></l><r>quiet<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>seseya<s n="adj"/></l><r>still<s n="adv"/></r></p></e>
+      <e><p><l>siasa<s n="adj"/></l><r>sour<s n="adj"/><s n="sint"/></r></p></e>
+      <!-- <e><p><l>sieti<s n="adj"/></l><r>specially<s n="adv"/><b/>for<s n="cnjadv"/></r></p></e> -->
+      <e><p><l>sisuat<s n="adj"/></l><r>painful<s n="adj"/></r></p></e>
+      <e><p><l>sren<s n="adj"/></l><r>good<s n="adv"/></r></p></e>
+      <e><p><l>tanam<s n="adj"/></l><r>short<s n="adv"/></r></p></e>
+      <e><p><l>tapisa<s n="adj"/></l><r>light<s n="adv"/></r></p></e>
+      <e><p><l>tasiepar<s n="adj"/></l><r>large<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>tasiepar<s n="adj"/></l><r>open<s n="adj"/></r></p></e>
+      <e><p><l>tetap<s n="adj"/></l><r>diligent<s n="adj"/></r></p></e>
+      <e><p><l>tindia<s n="adj"/></l><r>straight<s n="adj"/></r></p></e>
+      <e><p><l>tindia<s n="adj"/></l><r>good<s n="adv"/></r></p></e>
+      <e><p><l>tirioi<s n="adj"/></l><r>tall<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>titieit<s n="adj"/></l><r>bitter<s n="adj"/></r></p></e>
+      <e><p><l>tura<s n="adj"/></l><r>strand<s n="vblex"/><s n="pp"/></r></p></e>
+      <e><p><l>tutira<s n="adj"/></l><r>whole<s n="adj"/></r></p></e>
+      <e><p><l>tutira<s n="adj"/></l><r>complete<s n="adj"/></r></p></e>
+      <e><p><l>urar<s n="adj"/></l><r>red<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>vara kare<s n="adj"/></l><r>free<s n="adv"/></r></p></e>
+      <e><p><l>vata<s n="adj"/></l><r>right<s n="adj"/></r></p></e>
+      <e><p><l>vata<s n="adj"/></l><r>correct<s n="adj"/></r></p></e>
+      <e><p><l>vata<s n="adj"/></l><r>good<s n="adv"/></r></p></e>
+      <e><p><l>vatatar<s n="adj"/></l><r>naughty<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>vavi<s n="adj"/></l><r>woman<s n="n"/></r></p></e>
+      <e><p><l>vavi<s n="adj"/></l><r>female<s n="adj"/></r></p></e>
+      <e><p><l>vavoru<s n="adj"/></l><r>fresh<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>vavoru<s n="adj"/></l><r>young<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>vavoru<s n="adj"/></l><r>new<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>vawisi<s n="adj"/></l><r>hungry<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>vawu<s n="adj"/></l><r>brown<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>vebasa<s n="adj"/></l><r>wet<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>vemarisiani<s n="adj"/></l><r>spicy<s n="adj"/><s n="sint"/></r></p></e>
+      <!-- <e><p><l>vepui<s n="adj"/></l><r>young<s n="adj"/><s n="sint"/><s n="sup"/><b/>(<s n="lpar"/><b/>sibling<s n="n"/><s n="pl"/></r></p></e> -->
+      <e><p><l>verariate<s n="adj"/></l><r>dirty<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>vesasie<s n="adj"/></l><r>good<s n="adv"/></r></p></e>
+      <e><p><l>vesasie<s n="adj"/></l><r>beautiful<s n="adj"/></r></p></e>
+      <e><p><l>vetatar<s n="adj"/></l><r>sinful<s n="adj"/></r></p></e>
+      <!-- <e><p><l>vevisa<s n="adj"/></l><r>old<s n="adj"/><s n="sint"/><b/>(<s n="lpar"/></r></p></e> -->
+      <!-- <e><p><l>vevisa<s n="adj"/></l><r>be<s n="vbser"/><b/>a<s n="det"/><s n="ind"/><s n="sg"/><b/>grandmother<s n="n"/></r></p></e> -->
+      <e><p><l>via<s n="adj"/></l><r>discount<s n="vblex"/><s n="pp"/></r></p></e>
+      <e><p><l>voru<s n="adj"/></l><r>die<s n="n"/></r></p></e>
+      <e><p><l>voru<s n="adj"/></l><r>dead<s n="adj"/></r></p></e>
+      <e><p><l>vura<s n="adj"/></l><r>all<s n="adv"/></r></p></e>
+      <e><p><l>vura<s n="adj"/></l><r>each<s n="det"/><s n="ind"/><s n="sg"/></r></p></e>
+      <e><p><l>vura<s n="adj"/></l><r>every<s n="adv"/></r></p></e>
+      <e><p><l>vusa<s n="adj"/></l><r>white<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>wasia<s n="adj"/></l><r>all<s n="adv"/></r></p></e>
+      <e><p><l>rawave<s n="pr"/></l><r>downwards<s n="adv"/></r></p></e>
+      <!-- <e><p><l>rawave<s n="pr"/></l><r>far<s n="adj"/><s n="sint"/><s n="comp"/><b/>down<s n="adv"/></r></p></e> -->
+      <e><p><l>susa<s n="pr"/></l><r>inside<s n="adj"/></r></p></e>
+      <!-- <e><p><l>ariri<s n="adv"/></l><r>like<s n="adj"/><b/>that<s n="cnjsub"/></r></p></e> -->
+      <e><p><l>ariri<s n="adv"/></l><r>like<b/>so<s n="adj"/></r></p></e>
+      <e><p><l>awori<s n="adv"/></l><r>then<s n="adv"/></r></p></e>
+      <e><p><l>aya<s n="adv"/></l><r>not<b/>yet<s n="adv"/></r></p></e>
+      <e><p><l>diadi va<s n="adv"/></l><r>very<s n="adv"/></r></p></e>
+      <e><p><l>diuwa<s n="adv"/></l><r>downwards<s n="adv"/></r></p></e>
+      <e><p><l>diuwa<s n="adv"/></l><r>below<s n="adv"/></r></p></e>
+      <e><p><l>dorewa<s n="adv"/></l><r>*shorewards</r></p></e>
+      <!-- <e><p><l>doriwa<s n="adv"/></l><r>towards<s n="adv"/><b/>outside<s n="adj"/></r></p></e> -->
+      <!-- <e><p><l>katuerine<s n="adv"/></l><r>progressive<s n="adj"/><b/>aspect<s n="n"/></r></p></e> -->
+      <e><p><l>katuerine<s n="adv"/></l><r>just<b/>now<s n="adv"/></r></p></e>
+      <e><p><l>kausapa<s n="adv"/></l><r>tomorrow<b/>morning<s n="adv"/></r></p></e>
+      <e><p><l>kavori<s n="adv"/></l><r>just<b/>now<s n="adv"/></r></p></e>
+      <e><p><l>kavori<s n="adv"/></l><r>now<s n="adv"/></r></p></e>
+      <e><p><l>kavori<s n="adv"/></l><r>later<s n="adv"/></r></p></e>
+      <e><p><l>kavori<s n="adv"/></l><r>non<s n="adv"/></r></p></e>
+      <e><p><l>kota<s n="adv"/></l><r>also<s n="adv"/></r></p></e>
+      <e><p><l>kota<s n="adv"/></l><r>too<s n="adv"/></r></p></e>
+      <e><p><l>ma<s n="adv"/></l><r>*hither</r></p></e>
+      <!-- <e><p><l>mesu<s n="adv"/></l><r>here<s n="adv"/><b/>downwards<s n="adv"/></r></p></e> -->
+      <e><p><l>moyar<s n="adv"/></l><r>do<s n="vbdo"/><s n="pres"/>+not<s n="adv"/></r></p></e>
+      <!-- <e><p><l>moyar<s n="adv"/></l><r>may<s n="vbmod"/><b/>not<s n="adv"/></r></p></e> -->
+      <e><p><l>moyar<s n="adv"/></l><r>can<s n="vbmod"/><s n="pres"/>+not<s n="adv"/></r></p></e>
+      <e><p><l>nanaria<s n="adv"/></l><r>slowly<s n="adv"/></r></p></e>
+      <e><p><l>nani<s n="adv"/></l><r>later<s n="adv"/></r></p></e>
+      <e><p><l>okatuma<s n="adv"/></l><r>shortly<s n="adv"/></r></p></e>
+      <e><p><l>okatuma<s n="adv"/></l><r>momentarily<s n="adv"/></r></p></e>
+      <!-- <e><p><l>pana<s n="adv"/></l><r>beginning<s n="n"/><b/>to<s n="pr"/></r></p></e> -->
+      <e><p><l>papo<s n="adv"/></l><r>earlier<s n="adj"/></r></p></e>
+      <!-- <e><p><l>papo<s n="adv"/></l><r>a<s n="det"/><s n="ind"/><s n="sg"/><b/>earlier<s n="adj"/><b/>time<s n="n"/></r></p></e> -->
+      <e><p><l>papo<s n="adv"/></l><r>front<s n="adv"/></r></p></e>
+      <e><p><l>ra<s n="adv"/></l><r>thence<s n="adv"/></r></p></e>
+      <e><p><l>raria nini<s n="adv"/></l><r>today<s n="adv"/></r></p></e>
+      <e><p><l>raria pesi<s n="adv"/></l><r>*someday</r></p></e>
+      <e><p><l>raria pesi<s n="adv"/></l><r>one<b/>day<s n="adv"/></r></p></e>
+      <e><p><l>rava<s n="adv"/></l><r>below<s n="adv"/></r></p></e>
+      <e><p><l>rava<s n="adv"/></l><r>down<b/>there<s n="adv"/></r></p></e>
+      <e><p><l>ravinie wana<s n="adv"/></l><r>yesterday<s n="adv"/></r></p></e>
+      <e><p><l>rawai<s n="adv"/></l><r>more<b/>than<s n="pr"/></r></p></e>
+      <e><p><l>rusara<s n="adv"/></l><r>repeatedly<s n="adv"/></r></p></e>
+      <e><p><l>saira<s n="adv"/></l><r>quickly<s n="adv"/></r></p></e>
+      <e><p><l>saira<s n="adv"/></l><r>fast<s n="adv"/></r></p></e>
+      <!-- <e><p><l>sara<s n="adv"/></l><r>left<s n="adj"/><b/>(<s n="lpar"/></r></p></e> -->
+      <e><p><l>sasari<s n="adv"/></l><r>tomorrow<s n="adv"/></r></p></e>
+      <!-- <e><p><l>sisande<s n="adv"/></l><r>along<s n="pr"/><b/>the<s n="det"/><s n="def"/><s n="sp"/><b/>shoreline<s n="n"/></r></p></e> -->
+      <e><p><l>tape<s n="adv"/></l><r>*thusly</r></p></e>
+      <!-- <e><p><l>tapena<s n="adv"/></l><r>thus<s n="adv"/><b/>already<s n="adv"/></r></p></e> -->
+      <!-- <e><p><l>tayana<s n="adv"/></l><r>already<s n="adv"/><b/>thus<s n="adv"/></r></p></e> -->
+      <e><p><l>tomanau<s n="adv"/></l><r>already<s n="adv"/></r></p></e>
+      <e><p><l>toro<s n="adv"/></l><r>very<s n="adv"/></r></p></e>
+      <e><p><l>toro<s n="adv"/></l><r>a<b/>lot<s n="adv"/></r></p></e>
+      <e><p><l>varami<s n="adv"/></l><r>not<b/>yet<s n="adv"/></r></p></e>
+      <!-- <e><p><l>varami<s n="adv"/></l><r>never<s n="adv"/><b/>yet<s n="adv"/></r></p></e> -->
+      <!-- <e><p><l>varare<s n="adv"/></l><r>beside<s n="pr"/><b/>a<s n="det"/><s n="ind"/><s n="sg"/><b/>house<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>vata<s n="adv"/></l><r>right<s n="adj"/><b/>(<s n="lpar"/></r></p></e> -->
+      <e><p><l>venasia<s n="adv"/></l><r>only<s n="adj"/></r></p></e>
+      <e><p><l>venasia<s n="adv"/></l><r>just<s n="adv"/></r></p></e>
+      <e><p><l>vesiri<s n="adv"/></l><r>very<b/>rarely<s n="adv"/></r></p></e>
+      <!-- <e><p><l>viove<s n="adv"/></l><r>in<s n="adv"/><b/>piece<s n="n"/><s n="pl"/></r></p></e> -->
+      <e><p><l>vo<s n="adv"/></l><r>intensifier<s n="n"/></r></p></e>
+      <!-- <e><p><l>woroi<s n="adv"/></l><r>long<s n="adv"/><b/>(<s n="lpar"/></r></p></e> -->
+      <e><p><l>ya<s n="adv"/></l><r>again<s n="adv"/></r></p></e>
+      <e><p><l>yanama<s n="adv"/></l><r>then<s n="adv"/></r></p></e>
+      <e><p><l>amamo<s n="cmp"/></l><r>so<b/>that<s n="adv"/></r></p></e>
+      <e><p><l>ave<s n="cmp"/></l><r>so<b/>that<s n="adv"/></r></p></e>
+      <e><p><l>ave<s n="cmp"/></l><r>why<s n="adv"/><s n="itg"/></r></p></e>
+      <e><p><l>avemamo<s n="cmp"/></l><r>so<b/>that<s n="adv"/></r></p></e>
+      <e><p><l>avo<s n="cmp"/></l><r>then<s n="adv"/></r></p></e>
+      <e><p><l>mamo<s n="cmp"/></l><r>so<b/>that<s n="adv"/></r></p></e>
+      <e><p><l>amana<s n="cnj"/></l><r>but<s n="cnjcoo"/></r></p></e>
+      <e><p><l>ava<s n="cnj"/></l><r>because<s n="cnjsub"/></r></p></e>
+      <e><p><l>e<s n="cnj"/></l><r>and<s n="cnjcoo"/></r></p></e>
+      <e><p><l>ma<s n="cnj"/></l><r>and<s n="cnjcoo"/></r></p></e>
+      <e><p><l>maini<s n="cnj"/></l><r>then<s n="adv"/></r></p></e>
+      <e><p><l>vape<s n="cnj"/></l><r>but<s n="cnjcoo"/></r></p></e>
+      <!-- <e><p><l>nanaria venasia<s n="imp"/></l><r>go<s n="vblex"/><b/>slowly<s n="adv"/></r></p></e> -->
+      <!-- <e><p><l>piesava<s n="ij"/></l><r>do<s n="vbdo"/><s n="pres"/>+not<s n="adv"/><b/>worry<s n="n"/><b/>about<s n="adv"/><b/>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e> -->
+      <e><p><l>raria vesie<s n="ij"/></l><r>hello<s n="ij"/></r></p></e>
+      <!-- <e><p><l>raria vesie<s n="ij"/></l><r>good<s n="adv"/><b/>day<s n="n"/></r></p></e> -->
+      <e><p><l>siambai<s n="ij"/></l><r>good<b/>morning<s n="ij"/></r></p></e>
+      <e><p><l>tabeya<s n="ij"/></l><r>goodbye<s n="ij"/></r></p></e>
+      <e><p><l>yo<s n="ij"/></l><r>yes<s n="adv"/></r></p></e>
+      <e><p><l>na toi<s n="itg"/></l><r>where<s n="adv"/></r></p></e>
+      <e><p><l>na toi<s n="itg"/></l><r>where<s n="adv"/></r></p></e>
+      <e><p><l>nana topina<s n="itg"/></l><r>where<s n="adv"/></r></p></e>
+      <e><p><l>tane<s n="itg"/></l><r>how<s n="adv"/></r></p></e>
+      <e><p><l>tei<s n="itg"/></l><r>who<s n="prn"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
+      <e><p><l>teina<s n="itg"/></l><r>who<s n="prn"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
+      <e><p><l>toni(na)<s n="itg"/></l><r>which<s n="det"/><s n="itg"/><s n="sp"/></r></p></e>
+      <e><p><l>vitoi<s n="itg"/></l><r>what<s n="det"/><s n="itg"/><s n="sp"/></r></p></e>
+      <e><p><l>vitoi<s n="itg"/></l><r>how<s n="adv"/></r></p></e>
+      <e><p><l>nina<s n="loc"/></l><r>here<s n="adv"/></r></p></e>
+      <!-- <e><p><l>wana<s n="loc"/></l><r>there<s n="adv"/><b/>(<s n="lpar"/><b/>distance<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>yana<s n="loc"/></l><r>there<s n="adv"/><b/>(<s n="lpar"/><b/>distance<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>Muotarai<s n="n"/></l><r>island<s n="n"/><b/>off<s n="adv"/><b/>of<s n="pr"/><b/>*Windesi</r></p></e> -->
+      <!-- <e><p><l>abis<s n="n"/></l><r>village<s n="n"/><b/>sago<s n="n"/><b/>*grub</r></p></e> -->
+      <!-- <e><p><l>abo vienukwai<s n="n"/></l><r>yellow<s n="adj"/><s n="sint"/><b/>*pandan<b/>fruit<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>abo viurar<s n="n"/></l><r>*pandan<b/>fruit<s n="n"/></r></p></e> -->
+      <e><p><l>adia<s n="n"/></l><r>fire<s n="n"/></r></p></e>
+      <e><p><l>adia kaisa<s n="n"/></l><r>coal<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>ai<s n="n"/></l><r>leg<s n="n"/></r></p></e>
+      <e><p><l>ai<s n="n"/></l><r>wood<s n="n"/></r></p></e>
+      <e><p><l>ai<s n="n"/></l><r>tree<s n="n"/></r></p></e>
+      <!-- <e><p><l>ai avu<s n="n"/></l><r>*k<b/>small<s n="adj"/><s n="sint"/><b/>mangrove<s n="n"/><b/>tree<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>ai batai<s n="n"/></l><r>*k<b/>tree<s n="n"/></r></p></e> -->
+      <e><p><l>ai bu<s n="n"/></l><r>knee<s n="n"/></r></p></e>
+      <e><p><l>ai buo<s n="n"/></l><r>heart<s n="n"/></r></p></e>
+      <!-- <e><p><l>ai duaro<s n="n"/></l><r>utensil<s n="n"/><b/>for<s n="cnjadv"/><b/>eating<s n="n"/><b/>*papeda</r></p></e> -->
+      <!-- <e><p><l>ai dui<s n="n"/></l><r>*nibong<b/>palm<s n="n"/><b/>(<s n="lpar"/></r></p></e> -->
+      <!-- <e><p><l>ai duti<s n="n"/></l><r>*k<b/>small<s n="adj"/><s n="sint"/><b/>bamboo<s n="n"/></r></p></e> -->
+      <e><p><l>ai kiai<s n="n"/></l><r>toe<s n="n"/></r></p></e>
+      <e><p><l>ai kiai dir<s n="n"/></l><r>toenail<s n="n"/></r></p></e>
+      <!-- <e><p><l>ai komboti<s n="n"/></l><r>part<s n="n"/><b/>of<s n="pr"/><b/>foot<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>ai kondo<s n="n"/></l><r>*k<b/>wood<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>ai kusa<s n="n"/></l><r>tree<s n="n"/><b/>fern<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>ai mu<s n="n"/></l><r>fruiting<s n="n"/><b/>season<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>ai mundur<s n="n"/></l><r>*k<b/>tree<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>ai parai<s n="n"/></l><r>*k<b/>large<s n="adj"/><s n="sint"/><b/>mangrove<s n="n"/><b/>tree<s n="n"/></r></p></e> -->
+      <e><p><l>ai pata<s n="n"/></l><r>bed<s n="n"/></r></p></e>
+      <!-- <e><p><l>ai paya<s n="n"/></l><r>*k<b/>*pandan<b/>tree<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>ai pira<s n="n"/></l><r>tree<s n="n"/><b/>fern<s n="n"/></r></p></e> -->
+      <e><p><l>ai rabo<s n="n"/></l><r>log<s n="n"/></r></p></e>
+      <!-- <e><p><l>ai raro<s n="n"/></l><r>dense<s n="adj"/><s n="sint"/><b/>forest<s n="adj"/></r></p></e> -->
+      <e><p><l>ai riri<s n="n"/></l><r>pole<s n="n"/></r></p></e>
+      <e><p><l>ai rumwaya<s n="n"/></l><r>log<s n="n"/></r></p></e>
+      <!-- <e><p><l>ai rumwaya<s n="n"/></l><r>tree<s n="n"/><b/>stump<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>ai soma<s n="n"/></l><r>*k<b/>tree<s n="n"/></r></p></e> -->
+      <e><p><l>ai tatoni<s n="n"/></l><r>stick<s n="n"/></r></p></e>
+      <e><p><l>ai tupapui<s n="n"/></l><r>heel<s n="n"/></r></p></e>
+      <!-- <e><p><l>ai va<s n="n"/></l><r>sole<s n="adj"/><b/>of<s n="pr"/><b/>foot<s n="n"/></r></p></e> -->
+      <e><p><l>ai vasor<s n="n"/></l><r>sandal<s n="n"/></r></p></e>
+      <e><p><l>ai vioi<s n="n"/></l><r>harbour<s n="n"/></r></p></e>
+      <e><p><l>ai vioi<s n="n"/></l><r>bridge<s n="n"/></r></p></e>
+      <e><p><l>ai vioi<s n="n"/></l><r>pier<s n="n"/></r></p></e>
+      <!-- <e><p><l>ai wa<s n="n"/></l><r>canoe<s n="n"/><b/>wood<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>ai yarou<s n="n"/></l><r>*k<b/>tree<s n="n"/><b/>(<s n="lpar"/><b/>*casuarina</r></p></e> -->
+      <e><p><l>aikamai<s n="n"/></l><r>ankle<s n="n"/></r></p></e>
+      <!-- <e><p><l>akanak<s n="n"/></l><r>*k<b/>fruit<s n="n"/><b/>similar<s n="adj"/><b/>to<s n="pr"/><b/>*jackfruit</r></p></e> -->
+      <e><p><l>akanak<s n="n"/></l><r>*Artocarpus</r></p></e>
+      <!-- <e><p><l>akanak amber<s n="n"/></l><r>integer<s n="n"/><b/>*jackfruit</r></p></e> -->
+      <!-- <e><p><l>amau<s n="n"/></l><r>tool<s n="n"/><b/>use<s n="vblex"/><s n="past"/><b/>in<s n="adv"/><b/>sago<s n="n"/><b/>gardening<s n="n"/></r></p></e> -->
+      <e><p><l>amoi<s n="n"/></l><r>aunt<s n="n"/></r></p></e>
+      <e><p><l>amor<s n="n"/></l><r>kangaroo<s n="n"/></r></p></e>
+      <e><p><l>amumar<s n="n"/></l><r>fly<s n="n"/></r></p></e>
+      <!-- <e><p><l>amunggeri<s n="n"/></l><r>sago<s n="n"/><b/>*grub</r></p></e> -->
+      <!-- <e><p><l>ana<s n="n"/></l><r>sago<s n="n"/><b/>porridge<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>ana sasinai<s n="n"/></l><r>sago<s n="n"/><b/>spine<s n="n"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>ana su<s n="n"/></l><r>basket<s n="n"/><b/>for<s n="cnjadv"/><b/>holding<s n="n"/><b/>sago<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>ana vata<s n="n"/></l><r>*k<b/>large<s n="adj"/><s n="sint"/><b/>thorny<s n="adj"/><s n="sint"/><b/>sago<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>anambet<s n="n"/></l><r>cold<s n="adj"/><s n="sint"/><b/>*papeda</r></p></e> -->
+      <e><p><l>anana<s n="n"/></l><r>ant<s n="n"/></r></p></e>
+      <!-- <e><p><l>anana kepai<s n="n"/></l><r>*k<b/>large<s n="adj"/><s n="sint"/><b/>black<s n="adj"/><s n="sint"/><b/>bite<s n="vblex"/><s n="pprs"/><b/>ant<s n="n"/></r></p></e> -->
+      <e><p><l>anangganai<s n="n"/></l><r>bait<s n="n"/></r></p></e>
+      <!-- <e><p><l>ananggas<s n="n"/></l><r>*k<b/>sago<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>ananggemo<s n="n"/></l><r>*k<b/>sago<s n="n"/><b/>without<s n="adv"/><b/>thorn<s n="n"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>anasani<s n="n"/></l><r>oyster<s n="n"/><b/>shell<s n="n"/><s n="pl"/></r></p></e> -->
+      <e><p><l>anda<s n="n"/></l><r>*mango</r></p></e>
+      <!-- <e><p><l>anda<s n="n"/></l><r>crown<s n="n"/><g/><b/>of<b/>thorns<b/>sea<s n="n"/><b/>star<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>andau<s n="n"/></l><r>wild<s n="adj"/><s n="sint"/><b/>breadfruit<s n="n"/></r></p></e> -->
+      <e><p><l>andita buo<s n="n"/></l><r>breadfruit<s n="n"/></r></p></e>
+      <e><p><l>andiu<s n="n"/></l><r>mat<s n="adj"/></r></p></e>
+      <e><p><l>andori<s n="n"/></l><r>*guava</r></p></e>
+      <!-- <e><p><l>andori katu<s n="n"/></l><r>*k<b/>*guava</r></p></e> -->
+      <!-- <e><p><l>andori pimasa<s n="n"/></l><r>*k<b/>*guava</r></p></e> -->
+      <e><p><l>andori vesuwa<s n="n"/></l><r>*guava</r></p></e>
+      <e><p><l>anggadi<s n="n"/></l><r>coconut<s n="n"/></r></p></e>
+      <!-- <e><p><l>anggadi karu<s n="n"/></l><r>coconut<s n="n"/><b/>water<s n="n"/></r></p></e> -->
+      <e><p><l>anggamau<s n="n"/></l><r>dog<s n="n"/></r></p></e>
+      <e><p><l>anggara<s n="n"/></l><r>lime<s n="n"/></r></p></e>
+      <e><p><l>anggara<s n="n"/></l><r>lemon<s n="n"/></r></p></e>
+      <e><p><l>aniai<s n="n"/></l><r>rat<s n="n"/></r></p></e>
+      <!-- <e><p><l>aniai kakopa<s n="n"/></l><r>forest<s n="adj"/><b/>rat<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>anibar<s n="n"/></l><r>*k<b/>wasp<s n="n"/><b/>or<s n="cnjcoo"/><b/>hornet<s n="n"/></r></p></e> -->
+      <e><p><l>anio<s n="n"/></l><r>house<s n="n"/></r></p></e>
+      <e><p><l>aniose<s n="n"/></l><r>village<s n="n"/></r></p></e>
+      <e><p><l>aniose pui<s n="n"/></l><r>inland<s n="n"/></r></p></e>
+      <!-- <e><p><l>aniose pui<s n="n"/></l><r>interior<s n="n"/><b/>country<s n="n"/></r></p></e> -->
+      <e><p><l>apai<s n="n"/></l><r>bow<s n="n"/></r></p></e>
+      <!-- <e><p><l>apandiu rau<s n="n"/></l><r>*k<b/>leaf<s n="n"/></r></p></e> -->
+      <e><p><l>aparapiri<s n="n"/></l><r>gnat<s n="n"/></r></p></e>
+      <!-- <e><p><l>ape<s n="n"/></l><r>a<s n="det"/><s n="ind"/><s n="sg"/><b/>part<s n="n"/><b/>of<s n="pr"/><b/>the<s n="det"/><s n="def"/><s n="sp"/><b/>sago<s n="n"/><b/>plant<s n="n"/></r></p></e> -->
+      <e><p><l>apel<s n="n"/></l><r>apple<s n="n"/></r></p></e>
+      <e><p><l>apopa<s n="n"/></l><r>cobweb<s n="n"/></r></p></e>
+      <e><p><l>apopi<s n="n"/></l><r>butterfly<s n="n"/></r></p></e>
+      <e><p><l>apor<s n="n"/></l><r>catfish<s n="n"/></r></p></e>
+      <e><p><l>apose<s n="n"/></l><r>mace<s n="n"/></r></p></e>
+      <e><p><l>apusi<s n="n"/></l><r>grandparent<s n="n"/></r></p></e>
+      <e><p><l>arawa<s n="n"/></l><r>twig<s n="n"/></r></p></e>
+      <e><p><l>arepa<s n="n"/></l><r>cloud<s n="n"/></r></p></e>
+      <!-- <e><p><l>ari<s n="n"/></l><r>small<s n="adj"/><s n="sint"/><b/>*matoa<b/>fruit<s n="n"/></r></p></e> -->
+      <e><p><l>ari<s n="n"/></l><r>church<s n="n"/></r></p></e>
+      <e><p><l>ari<s n="n"/></l><r>week<s n="n"/></r></p></e>
+      <e><p><l>arie<s n="n"/></l><r>squash<s n="n"/></r></p></e>
+      <e><p><l>ariou<s n="n"/></l><r>flower<s n="n"/></r></p></e>
+      <!-- <e><p><l>ariou ambe<s n="n"/></l><r>coral<s n="n"/><b/>tree<s n="n"/><b/>(<s n="lpar"/><b/>*sp</r></p></e> -->
+      <!-- <e><p><l>ariou vemamaya<s n="n"/></l><r>mimosa<s n="n"/><b/>plant<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>ariou vemarera<s n="n"/></l><r>mimosa<s n="n"/><b/>plant<s n="n"/></r></p></e> -->
+      <e><p><l>aro<s n="n"/></l><r>chest<s n="n"/></r></p></e>
+      <!-- <e><p><l>aro<s n="n"/></l><r>rope<s n="n"/><b/>trap<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>aropo<s n="n"/></l><r>front<s n="adv"/><b/>of<s n="pr"/><b/>body<s n="n"/></r></p></e> -->
+      <e><p><l>asa<s n="n"/></l><r>branch<s n="n"/></r></p></e>
+      <e><p><l>asa<s n="n"/></l><r>branch<s n="vblex"/><s n="pprs"/></r></p></e>
+      <e><p><l>asaruai<s n="n"/></l><r>sea<b/>urchin<s n="n"/></r></p></e>
+      <!-- <e><p><l>asaruai rawa<s n="n"/></l><r>sand<s n="n"/><b/>dollar<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>asu<s n="n"/></l><r>*k<b/>fruit<s n="n"/></r></p></e> -->
+      <e><p><l>atai<s n="n"/></l><r>octopus<s n="n"/></r></p></e>
+      <e><p><l>ate<s n="n"/></l><r>ladder<s n="n"/></r></p></e>
+      <e><p><l>ate<s n="n"/></l><r>stair<s n="n"/></r></p></e>
+      <!-- <e><p><l>atobetari<s n="n"/></l><r>sea<s n="n"/><b/>almond<b/>tree<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>atobetari<s n="n"/></l><r>umbrella<s n="n"/><b/>tree<s n="n"/></r></p></e> -->
+      <e><p><l>atovi<s n="n"/></l><r>arrow<s n="n"/></r></p></e>
+      <e><p><l>atuma<s n="n"/></l><r>child<s n="n"/></r></p></e>
+      <e><p><l>ature<s n="n"/></l><r>door<s n="n"/></r></p></e>
+      <e><p><l>awadu<s n="n"/></l><r>leg<s n="n"/></r></p></e>
+      <e><p><l>awadu<s n="n"/></l><r>thigh<s n="n"/></r></p></e>
+      <!-- <e><p><l>awair<s n="n"/></l><r>coral<s n="n"/><b/>*sp</r></p></e> -->
+      <e><p><l>awair<s n="n"/></l><r>small<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>awawar<s n="n"/></l><r>clothes<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>aweko<s n="n"/></l><r>cockatoo<s n="n"/></r></p></e>
+      <e><p><l>awini<s n="n"/></l><r>mother<s n="n"/></r></p></e>
+      <!-- <e><p><l>awini katu<s n="n"/></l><r>mother<s n="n"/><b/>young<s n="adj"/><s n="sint"/><s n="comp"/><b/>sister<s n="n"/></r></p></e> -->
+      <e><p><l>aya<s n="n"/></l><r>bird<s n="n"/></r></p></e>
+      <e><p><l>aya aweko<s n="n"/></l><r>cockatoo<s n="n"/></r></p></e>
+      <e><p><l>aya masisumi<s n="n"/></l><r>sparrow<s n="n"/></r></p></e>
+      <e><p><l>aya tomboro<s n="n"/></l><r>owl<s n="n"/></r></p></e>
+      <!-- <e><p><l>aya vata<s n="n"/></l><r>bird<s n="n"/><b/>of<s n="pr"/><b/>paradise<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>ayas<s n="n"/></l><r>*k<b/>bivalve<s n="adj"/><b/>mollusk<s n="n"/><b/>found<s n="adj"/><b/>in<s n="adv"/><b/>mangrove<s n="n"/><b/>log<s n="n"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>ayas<s n="n"/></l><r>canoe<s n="n"/><b/>worm<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>ayori<s n="n"/></l><r>ficus<s n="n"/><b/>tree<s n="n"/></r></p></e> -->
+      <e><p><l>baba vasia<s n="n"/></l><r>parent<s n="n"/><s n="pl"/></r></p></e>
+      <!-- <e><p><l>baba(i)<s n="n"/></l><r>old<s n="adj"/><s n="sint"/><s n="comp"/><b/>sibling<s n="n"/></r></p></e> -->
+      <e><p><l>babua<s n="n"/></l><r>roof<s n="n"/></r></p></e>
+      <e><p><l>babuotui<s n="n"/></l><r>mud<s n="n"/></r></p></e>
+      <e><p><l>bar<s n="n"/></l><r>ball<s n="n"/></r></p></e>
+      <!-- <e><p><l>barimu<s n="n"/></l><r>*k<b/>taro<s n="n"/><b/>root<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>bata<s n="n"/></l><r>large<s n="adj"/><s n="sint"/><b/>wave<s n="adj"/></r></p></e> -->
+      <!-- <e><p><l>baya<s n="n"/></l><r>*midrib<b/>of<s n="pr"/><b/>palm<s n="n"/><b/>leaf<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>bianggaina<s n="n"/></l><r>large<s n="adj"/><s n="sint"/><b/>sea<s n="n"/><b/>turtle<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>bibiya<s n="n"/></l><r>small<s n="adj"/><s n="sint"/><b/>wave<s n="n"/><s n="pl"/></r></p></e> -->
+      <e><p><l>botol<s n="n"/></l><r>bottle<s n="n"/></r></p></e>
+      <e><p><l>buai<s n="n"/></l><r>*decorum</r></p></e>
+      <e><p><l>buai<s n="n"/></l><r>character<s n="n"/></r></p></e>
+      <e><p><l>buai<s n="n"/></l><r>behaviour<s n="n"/></r></p></e>
+      <e><p><l>bubusa<s n="n"/></l><r>lung<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>bubuya<s n="n"/></l><r>bubble<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>buo<s n="n"/></l><r>fruit<s n="n"/></r></p></e>
+      <e><p><l>dia<s n="n"/></l><r>fish<s n="n"/></r></p></e>
+      <!-- <e><p><l>dia ari<s n="n"/></l><r>*k<b/>fish<s n="n"/><b/>(<s n="lpar"/></r></p></e> -->
+      <!-- <e><p><l>dia ikabu<s n="n"/></l><r>reef<s n="n"/><b/>fish<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>dia karu<s n="n"/></l><r>*k<b/>fish<s n="n"/><b/>dish<s n="n"/></r></p></e> -->
+      <e><p><l>dia kokori<s n="n"/></l><r>*butterflyfish</r></p></e>
+      <!-- <e><p><l>dia maruaro<s n="n"/></l><r>freshwater<s n="n"/><b/>fish<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>dia rumit<s n="n"/></l><r>reef<s n="n"/><b/>fish<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>dia vesovina<s n="n"/></l><r>smoke<s n="vblex"/><s n="past"/><b/>fish<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>dia vesovina<s n="n"/></l><r>smoke<s n="vblex"/><s n="past"/><b/>fish<s n="n"/></r></p></e> -->
+      <e><p><l>dianggariria<s n="n"/></l><r>crocodile<s n="n"/></r></p></e>
+      <e><p><l>diasinia<s n="n"/></l><r>crocodile<s n="n"/></r></p></e>
+      <e><p><l>die<s n="n"/></l><r>low<b/>tide<s n="n"/></r></p></e>
+      <!-- <e><p><l>die diru<s n="n"/></l><r>nighttime<s n="n"/><b/>low<b/>tide<s n="n"/></r></p></e> -->
+      <e><p><l>diniai<s n="n"/></l><r>stove<s n="n"/></r></p></e>
+      <e><p><l>diobara<s n="n"/></l><r>rain<s n="n"/></r></p></e>
+      <e><p><l>dir<s n="n"/></l><r>tooth<s n="n"/></r></p></e>
+      <e><p><l>dire<s n="n"/></l><r>edge<s n="n"/></r></p></e>
+      <e><p><l>direwa<s n="n"/></l><r>edge<s n="n"/></r></p></e>
+      <e><p><l>direwa<s n="n"/></l><r>fringe<s n="n"/></r></p></e>
+      <e><p><l>direwa<s n="n"/></l><r>outskirts<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>diro mua<s n="n"/></l><r>brother<s n="n"/><g/>-in-law</r></p></e>
+      <e><p><l>diro vavi<s n="n"/></l><r>sister<s n="n"/><g/>-in-law</r></p></e>
+      <e><p><l>diru<s n="n"/></l><r>night<s n="n"/></r></p></e>
+      <e><p><l>diu<s n="n"/></l><r>down<b/>below<s n="adv"/></r></p></e>
+      <e><p><l>diu<s n="n"/></l><r>under<s n="adv"/></r></p></e>
+      <e><p><l>do re<s n="n"/></l><r>forest<s n="adj"/></r></p></e>
+      <e><p><l>dodeso<s n="n"/></l><r>ambush<s n="n"/></r></p></e>
+      <e><p><l>dodeso<s n="n"/></l><r>trap<s n="n"/></r></p></e>
+      <e><p><l>dodoku<s n="n"/></l><r>harbour<s n="n"/></r></p></e>
+      <e><p><l>dodoku<s n="n"/></l><r>bridge<s n="n"/></r></p></e>
+      <e><p><l>dodoku<s n="n"/></l><r>pier<s n="n"/></r></p></e>
+      <e><p><l>doi<s n="n"/></l><r>money<s n="n"/></r></p></e>
+      <e><p><l>dui<s n="n"/></l><r>floor<s n="n"/></r></p></e>
+      <!-- <e><p><l>dui<s n="n"/></l><r>*nibung<b/>palm<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>dui mimbiaki<s n="n"/></l><r>*nibong<b/>palm<s n="n"/><b/>(<s n="lpar"/></r></p></e> -->
+      <e><p><l>dunia<s n="n"/></l><r>world<s n="adj"/></r></p></e>
+      <e><p><l>ember<s n="n"/></l><r>bucket<s n="n"/></r></p></e>
+      <!-- <e><p><l>enderek<s n="n"/></l><r>*morinda<b/>(<s n="lpar"/><b/>tree<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>enderek buo<s n="n"/></l><r>*morinda<b/>(<s n="lpar"/><b/>fruit<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>enggerek<s n="n"/></l><r>*morinda<b/>tree<s n="n"/></r></p></e> -->
+      <e><p><l>gaja<s n="n"/></l><r>elephant<s n="n"/></r></p></e>
+      <e><p><l>gardus<s n="n"/></l><r>box<s n="n"/></r></p></e>
+      <e><p><l>glas<s n="n"/></l><r>glass<s n="n"/></r></p></e>
+      <!-- <e><p><l>gomo<s n="n"/></l><r>wild<s n="adj"/><s n="sint"/><b/>breadfruit<s n="n"/></r></p></e> -->
+      <e><p><l>imboni<s n="n"/></l><r>beetle<s n="n"/></r></p></e>
+      <!-- <e><p><l>ina<s n="n"/></l><r>sago<s n="n"/><b/>pulp<s n="n"/></r></p></e> -->
+      <e><p><l>inar<s n="n"/></l><r>widow<s n="n"/></r></p></e>
+      <e><p><l>inggeresi<s n="n"/></l><r>cockroach<s n="n"/></r></p></e>
+      <e><p><l>jendela<s n="n"/></l><r>window<s n="n"/></r></p></e>
+      <e><p><l>kabiebar<s n="n"/></l><r>lightning<s n="n"/></r></p></e>
+      <!-- <e><p><l>kabubui<s n="n"/></l><r>bamboo<s n="n"/><b/>shoot<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>kai<s n="n"/></l><r>*papeda<b/>chopstick<s n="n"/><s n="pl"/></r></p></e> -->
+      <e><p><l>kakani<s n="n"/></l><r>eagle<s n="n"/></r></p></e>
+      <!-- <e><p><l>kakomi<s n="n"/></l><r>nutmeg<s n="n"/><b/>fruit<s n="n"/></r></p></e> -->
+      <e><p><l>kakomi ambe<s n="n"/></l><r>*Banda</r></p></e>
+      <!-- <e><p><l>kakopa<s n="n"/></l><r>mace<s n="n"/><b/>earth<s n="n"/></r></p></e> -->
+      <e><p><l>kakopa<s n="n"/></l><r>ground<s n="n"/></r></p></e>
+      <e><p><l>kakuna<s n="n"/></l><r>maggot<s n="n"/></r></p></e>
+      <!-- <e><p><l>kakuna suat<s n="n"/></l><r>bite<s n="vblex"/><s n="pprs"/><b/>caterpillar<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>kalawai<s n="n"/></l><r>single<s n="adj"/><b/>fishing<s n="n"/><b/>spear<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>kama<s n="n"/></l><r>*k<b/>spiral<s n="n"/><b/>shell<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>kamareni<s n="n"/></l><r>many<s n="det"/><s n="qnt"/><s n="pl"/><b/>fishing<s n="n"/><b/>spear<s n="n"/></r></p></e> -->
+      <e><p><l>kamari<s n="n"/></l><r>basement<s n="n"/></r></p></e>
+      <e><p><l>kamayu<s n="n"/></l><r>smoke<s n="n"/></r></p></e>
+      <e><p><l>kamberei<s n="n"/></l><r>hole<s n="n"/></r></p></e>
+      <e><p><l>kambu<s n="n"/></l><r>water<s n="n"/></r></p></e>
+      <!-- <e><p><l>kambu sore<s n="n"/></l><r>river<s n="n"/><b/>mouth<s n="n"/></r></p></e> -->
+      <e><p><l>kambu sore<s n="n"/></l><r>delta<s n="n"/></r></p></e>
+      <e><p><l>kambu virare<s n="n"/></l><r>waterfall<s n="n"/></r></p></e>
+      <e><p><l>kamisera<s n="n"/></l><r>morning<s n="n"/></r></p></e>
+      <e><p><l>kamitu<s n="n"/></l><r>anchor<s n="n"/></r></p></e>
+      <e><p><l>kamuavu<s n="n"/></l><r>starfish<s n="n"/></r></p></e>
+      <e><p><l>kamumi<s n="n"/></l><r>mosquito<s n="n"/></r></p></e>
+      <e><p><l>kandai<s n="n"/></l><r>spine<s n="n"/></r></p></e>
+      <e><p><l>kandai<s n="n"/></l><r>thorn<s n="n"/></r></p></e>
+      <e><p><l>kandang<s n="n"/></l><r>cage<s n="n"/></r></p></e>
+      <e><p><l>kanisu<s n="n"/></l><r>saliva<s n="n"/></r></p></e>
+      <e><p><l>kanisu<s n="n"/></l><r>spit<s n="n"/></r></p></e>
+      <!-- <e><p><l>kanyambe<s n="n"/></l><r>*k<b/>large<s n="adj"/><s n="sint"/><b/>land<s n="n"/><b/>turtle<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>kapatieiti<s n="n"/></l><r>house<s n="n"/><b/>lizard<s n="n"/></r></p></e> -->
+      <e><p><l>kapo<s n="n"/></l><r>mushroom<s n="n"/></r></p></e>
+      <!-- <e><p><l>kapo ai<s n="n"/></l><r>wood<s n="n"/><b/>mushroom<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>kapo ina<s n="n"/></l><r>sago<s n="n"/><b/>mushroom<s n="n"/></r></p></e> -->
+      <e><p><l>kapura<s n="n"/></l><r>dove<s n="n"/></r></p></e>
+      <!-- <e><p><l>karaini<s n="n"/></l><r>bee<s n="n"/><b/>hive<s n="n"/></r></p></e> -->
+      <e><p><l>karaini<s n="n"/></l><r>nest<s n="n"/></r></p></e>
+      <e><p><l>karandia<s n="n"/></l><r>net<s n="adv"/></r></p></e>
+      <e><p><l>karandia<s n="n"/></l><r>basket<s n="n"/></r></p></e>
+      <e><p><l>karapea<s n="n"/></l><r>chair<s n="n"/></r></p></e>
+      <!-- <e><p><l>karavi<s n="n"/></l><r>unmarried<s n="adj"/><b/>woman<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>kare<s n="n"/></l><r>coral<s n="n"/><b/>(<s n="lpar"/></r></p></e> -->
+      <!-- <e><p><l>kare<s n="n"/></l><r>breadfruit<s n="n"/><b/>seed<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>karia<s n="n"/></l><r>high<s n="adv"/><b/>tide<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>karie<s n="n"/></l><r>*k<b/>bamboo<s n="n"/></r></p></e> -->
+      <e><p><l>karu<s n="n"/></l><r>back<s n="adj"/></r></p></e>
+      <e><p><l>karu<s n="n"/></l><r>behind<s n="adv"/></r></p></e>
+      <e><p><l>karu<s n="n"/></l><r>liquid<s n="adj"/></r></p></e>
+      <e><p><l>karu<s n="n"/></l><r>sauce<s n="n"/></r></p></e>
+      <!-- <e><p><l>karubuar<s n="n"/></l><r>Christmas<s n="n"/><b/>tree<s n="n"/><b/>worm<s n="n"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>karubuari<s n="n"/></l><r>*k<b/>snail<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>karumas<s n="n"/></l><r>hot<s n="adj"/><s n="sint"/><b/>water<s n="n"/></r></p></e> -->
+      <e><p><l>karusina<s n="n"/></l><r>backbone<s n="n"/></r></p></e>
+      <e><p><l>karusina<s n="n"/></l><r>spine<s n="n"/></r></p></e>
+      <!-- <e><p><l>kasasai<s n="n"/></l><r>black<s n="adj"/><s n="sint"/><b/>land<s n="n"/><b/>crab<s n="n"/></r></p></e> -->
+      <e><p><l>kasau<s n="n"/></l><r>far<s n="adv"/></r></p></e>
+      <e><p><l>kasau<s n="n"/></l><r>distance<s n="n"/></r></p></e>
+      <e><p><l>kasau<s n="n"/></l><r>gap<s n="n"/></r></p></e>
+      <e><p><l>kasiboi<s n="n"/></l><r>*earthworm</r></p></e>
+      <e><p><l>kasina<s n="n"/></l><r>cucumber<s n="n"/></r></p></e>
+      <e><p><l>kasire<s n="n"/></l><r>waist<s n="n"/></r></p></e>
+      <e><p><l>kasusir<s n="n"/></l><r>twin<s n="n"/></r></p></e>
+      <e><p><l>kasuvavoru<s n="n"/></l><r>morning<s n="n"/></r></p></e>
+      <!-- <e><p><l>katarowi<s n="n"/></l><r>reef<s n="n"/><b/>fish<s n="n"/><b/>(<s n="lpar"/><b/>*grunter</r></p></e> -->
+      <e><p><l>katiei<s n="n"/></l><r>bachelor<s n="n"/></r></p></e>
+      <e><p><l>kavaru<s n="n"/></l><r>bean<s n="n"/></r></p></e>
+      <e><p><l>kavaru kakopa<s n="n"/></l><r>peanut<s n="n"/></r></p></e>
+      <!-- <e><p><l>kavaru maki<s n="n"/></l><r>*mung<b/>bean<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>kavaru viarui<s n="n"/></l><r>long<s n="adv"/><b/>bean<s n="n"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>kavaru viurar<s n="n"/></l><r>red<s n="adj"/><s n="sint"/><b/>bean<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>kavaru viurar<s n="n"/></l><r>kidney<s n="n"/><b/>bean<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>kavi<s n="n"/></l><r>term<s n="n"/><b/>of<s n="pr"/><b/>address<s n="n"/><b/>for<s n="cnjadv"/><b/>a<s n="det"/><s n="ind"/><s n="sg"/><b/>young<s n="adj"/><s n="sint"/><s n="comp"/><b/>woman<s n="n"/><b/>from<s n="pr"/><b/>a<s n="det"/><s n="ind"/><s n="sg"/><b/>elder<s n="adj"/></r></p></e> -->
+      <e><p><l>kavi<s n="n"/></l><r>girl<s n="n"/></r></p></e>
+      <e><p><l>kavio<s n="n"/></l><r>speak<s n="vblex"/></r></p></e>
+      <e><p><l>kavio<s n="n"/></l><r>talk<s n="n"/></r></p></e>
+      <e><p><l>kavio<s n="n"/></l><r>word<s n="n"/></r></p></e>
+      <e><p><l>kavio<s n="n"/></l><r>language<s n="n"/></r></p></e>
+      <!-- <e><p><l>kavuvui<s n="n"/></l><r>bamboo<s n="n"/><b/>shoot<s n="n"/></r></p></e> -->
+      <e><p><l>kawai<s n="n"/></l><r>shrimp<s n="n"/></r></p></e>
+      <e><p><l>kawasa<s n="n"/></l><r>guest<s n="n"/></r></p></e>
+      <e><p><l>kawasa<s n="n"/></l><r>person<s n="n"/></r></p></e>
+      <e><p><l>kawasa<s n="n"/></l><r>society<s n="n"/></r></p></e>
+      <e><p><l>kayobi<s n="n"/></l><r>cuttlefish<s n="n"/></r></p></e>
+      <!-- <e><p><l>kayori<s n="n"/></l><r>freshwater<s n="n"/><b/>eel<s n="n"/></r></p></e> -->
+      <e><p><l>kayu re<s n="n"/></l><r>hook<s n="n"/></r></p></e>
+      <!-- <e><p><l>kayu re<s n="n"/></l><r>fish<s n="n"/><b/>hook<s n="n"/></r></p></e> -->
+      <e><p><l>kera-kerai<s n="n"/></l><r>spider<s n="n"/></r></p></e>
+      <!-- <e><p><l>kesi<s n="n"/></l><r>tree<s n="n"/><b/>resin<s n="n"/></r></p></e> -->
+      <e><p><l>kiambot<s n="n"/></l><r>kidney<s n="n"/></r></p></e>
+      <e><p><l>kimanam<s n="n"/></l><r>agreement<s n="n"/></r></p></e>
+      <!-- <e><p><l>kiru<s n="n"/></l><r>lime<s n="n"/><b/>(<s n="lpar"/><b/>betel<s n="n"/></r></p></e> -->
+      <e><p><l>kivavio<s n="n"/></l><r>speech<s n="n"/></r></p></e>
+      <e><p><l>kodo<s n="n"/></l><r>frog<s n="n"/></r></p></e>
+      <!-- <e><p><l>koire besaire<s n="n"/></l><r>*k<b/>*stinkbug</r></p></e> -->
+      <e><p><l>koiresinia<s n="n"/></l><r>*stinkbug</r></p></e>
+      <e><p><l>kokori<s n="n"/></l><r>chicken<s n="n"/></r></p></e>
+      <!-- <e><p><l>komap rau<s n="n"/></l><r>amaranth<s n="n"/><b/>leaf<s n="n"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>komoi<s n="n"/></l><r>term<s n="n"/><b/>of<s n="pr"/><b/>address<s n="n"/><b/>for<s n="cnjadv"/><b/>a<s n="det"/><s n="ind"/><s n="sg"/><b/>young<s n="adj"/><s n="sint"/><s n="comp"/><b/>man<s n="n"/><b/>from<s n="pr"/><b/>a<s n="det"/><s n="ind"/><s n="sg"/><b/>elder<s n="adj"/></r></p></e> -->
+      <e><p><l>komoi<s n="n"/></l><r>boy<s n="n"/></r></p></e>
+      <!-- <e><p><l>korombovi<s n="n"/></l><r>*cowrie<b/>shell<s n="n"/></r></p></e> -->
+      <e><p><l>korou<s n="n"/></l><r>snake<s n="n"/></r></p></e>
+      <!-- <e><p><l>kosa<s n="n"/></l><r>*k<b/>bamboo<s n="n"/></r></p></e> -->
+      <e><p><l>kosinai<s n="n"/></l><r>glass<s n="n"/></r></p></e>
+      <!-- <e><p><l>kowo-kowo<s n="n"/></l><r>*k<b/>bird<s n="n"/></r></p></e> -->
+      <e><p><l>kuau<s n="n"/></l><r>bucket<s n="n"/></r></p></e>
+      <e><p><l>kuda<s n="n"/></l><r>horse<s n="n"/></r></p></e>
+      <!-- <e><p><l>kudung<s n="n"/></l><r>dirty<s n="adj"/><s n="sint"/><b/>hand<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>kumami<s n="n"/></l><r>sea<s n="n"/><b/>cucumber<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>kumu-kumu<s n="n"/></l><r>*k<b/>large<s n="adj"/><s n="sint"/><b/>dove<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>kurumi<s n="n"/></l><r>valley<s n="n"/><b/>between<s n="pr"/><b/>mountain<s n="n"/><s n="pl"/></r></p></e> -->
+      <e><p><l>kuruya<s n="n"/></l><r>thunder<s n="n"/></r></p></e>
+      <!-- <e><p><l>kusuvei rau<s n="n"/></l><r>fern<s n="n"/><b/>frond<s n="n"/></r></p></e> -->
+      <e><p><l>lilin<s n="n"/></l><r>candle<s n="n"/></r></p></e>
+      <e><p><l>loba<s n="n"/></l><r>*groundhog</r></p></e>
+      <!-- <e><p><l>madiawi<s n="n"/></l><r>young<s n="adj"/><s n="sint"/><s n="comp"/><b/>sibling<s n="n"/></r></p></e> -->
+      <e><p><l>mai<s n="n"/></l><r>mother<s n="n"/></r></p></e>
+      <!-- <e><p><l>makarabat<s n="n"/></l><r>saltwater<s n="n"/><b/>eel<s n="n"/></r></p></e> -->
+      <e><p><l>mambebaba<s n="n"/></l><r>cousin<s n="n"/></r></p></e>
+      <e><p><l>mambiri<s n="n"/></l><r>king<s n="n"/></r></p></e>
+      <!-- <e><p><l>mambiri<s n="n"/></l><r>powerful<s n="adj"/><b/>person<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>mamburuk<s n="n"/></l><r>crown<s n="vblex"/><s n="pp"/><b/>pigeon<s n="n"/></r></p></e> -->
+      <e><p><l>mamei<s n="n"/></l><r>hook<s n="n"/></r></p></e>
+      <!-- <e><p><l>mamei<s n="n"/></l><r>fish<s n="n"/><b/>hook<s n="n"/></r></p></e> -->
+      <e><p><l>mamura<s n="n"/></l><r>bamboo<s n="n"/></r></p></e>
+      <e><p><l>mamuta<s n="n"/></l><r>vomit<s n="n"/></r></p></e>
+      <!-- <e><p><l>mandakiri<s n="n"/></l><r>*k<b/>sea<s n="n"/><b/>small<s n="adj"/><s n="sint"/><b/>cucumber<s n="n"/></r></p></e> -->
+      <e><p><l>mandawandi<s n="n"/></l><r>*imam</r></p></e>
+      <e><p><l>mandiu<s n="n"/></l><r>seaweed<s n="n"/></r></p></e>
+      <!-- <e><p><l>mandiu buo<s n="n"/></l><r>*k<b/>seaweed<s n="n"/><b/>fruit<s n="n"/></r></p></e> -->
+      <e><p><l>maneta<s n="n"/></l><r>friend<s n="n"/></r></p></e>
+      <e><p><l>mani<s n="n"/></l><r>oil<s n="adj"/></r></p></e>
+      <e><p><l>mani anggadi<s n="n"/></l><r>coconut<b/>oil<s n="n"/></r></p></e>
+      <e><p><l>mani kakopa<s n="n"/></l><r>kerosene<s n="n"/></r></p></e>
+      <e><p><l>maniai<s n="n"/></l><r>wasp<s n="n"/></r></p></e>
+      <e><p><l>maniai<s n="n"/></l><r>bee<s n="n"/></r></p></e>
+      <!-- <e><p><l>maniai kakopa<s n="n"/></l><r>ground<s n="n"/><b/>wasp<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>maniai pimuna<s n="n"/></l><r>*k<b/>large<s n="adj"/><s n="sint"/><b/>wasp<s n="n"/></r></p></e> -->
+      <e><p><l>maniai unu<s n="n"/></l><r>bee<s n="n"/></r></p></e>
+      <!-- <e><p><l>manora<s n="n"/></l><r>many<s n="det"/><s n="qnt"/><s n="pl"/><b/>fishing<s n="n"/><b/>spear<s n="n"/></r></p></e> -->
+      <e><p><l>manu<s n="n"/></l><r>boil<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>mapar<s n="n"/></l><r>valley<s n="n"/></r></p></e>
+      <e><p><l>mapar<s n="n"/></l><r>plain<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>marandi<s n="n"/></l><r>decoration<s n="n"/><s n="pl"/></r></p></e>
+      <!-- <e><p><l>marapa rau<s n="n"/></l><r>paddy<s n="n"/><b/>oat<s n="n"/><b/>leaf<s n="n"/></r></p></e> -->
+      <e><p><l>marareia<s n="n"/></l><r>child<s n="n"/></r></p></e>
+      <!-- <e><p><l>mararou buo<s n="n"/></l><r>coral<s n="n"/><b/>polyp<s n="n"/></r></p></e> -->
+      <e><p><l>maria<s n="n"/></l><r>water<s n="n"/></r></p></e>
+      <!-- <e><p><l>maria re<s n="n"/></l><r>water<s n="n"/><b/>source<s n="n"/></r></p></e> -->
+      <e><p><l>maria re<s n="n"/></l><r>spring<s n="n"/></r></p></e>
+      <!-- <e><p><l>marisia<s n="n"/></l><r>chili<s n="n"/><b/>pepper<s n="n"/></r></p></e> -->
+      <e><p><l>marova<s n="n"/></l><r>war<s n="n"/></r></p></e>
+      <!-- <e><p><l>marova<s n="n"/></l><r>(<s n="lpar"/><b/>a<s n="det"/><s n="ind"/><s n="sg"/><b/>war<s n="n"/></r></p></e> -->
+      <e><p><l>masa<s n="n"/></l><r>grandfather<s n="n"/></r></p></e>
+      <e><p><l>masaso<s n="n"/></l><r>life<s n="n"/></r></p></e>
+      <e><p><l>masaso<s n="n"/></l><r>existence<s n="n"/></r></p></e>
+      <e><p><l>masian<s n="n"/></l><r>widower<s n="n"/></r></p></e>
+      <e><p><l>mawo<s n="n"/></l><r>gong<s n="n"/></r></p></e>
+      <!-- <e><p><l>mayana rau<s n="n"/></l><r>*k<b/>*coleus<b/>plant<s n="n"/></r></p></e> -->
+      <e><p><l>memei<s n="n"/></l><r>uncle<s n="n"/></r></p></e>
+      <e><p><l>mia<s n="n"/></l><r>dream<s n="n"/></r></p></e>
+      <!-- <e><p><l>mimiotari<s n="n"/></l><r>common<s n="adj"/><b/>*snakehead<b/>fish<s n="n"/></r></p></e> -->
+      <e><p><l>moga<s n="n"/></l><r>crow<s n="n"/></r></p></e>
+      <e><p><l>momoi<s n="n"/></l><r>breadfruit<s n="n"/></r></p></e>
+      <e><p><l>mor<s n="n"/></l><r>seed<s n="n"/></r></p></e>
+      <e><p><l>mot<s n="n"/></l><r>fog<s n="n"/></r></p></e>
+      <!-- <e><p><l>mu<s n="n"/></l><r>*k<b/>small<s n="adj"/><s n="sint"/><b/>fish<s n="n"/></r></p></e> -->
+      <e><p><l>mua<s n="n"/></l><r>man<s n="n"/></r></p></e>
+      <e><p><l>mua<s n="n"/></l><r>male<s n="adj"/></r></p></e>
+      <e><p><l>muna<s n="n"/></l><r>rain<s n="n"/></r></p></e>
+      <e><p><l>mundia<s n="n"/></l><r>earthquake<s n="n"/></r></p></e>
+      <e><p><l>muri<s n="n"/></l><r>crab<s n="n"/></r></p></e>
+      <!-- <e><p><l>musi<s n="n"/></l><r>tree<s n="n"/><b/>kangaroo<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>nandau<s n="n"/></l><r>*thatched<b/>roof<s n="n"/><b/>made<s n="adj"/><b/>of<s n="pr"/><b/>sago<s n="n"/><b/>leaf<s n="n"/><s n="pl"/></r></p></e> -->
+      <e><p><l>nando<s n="n"/></l><r>banana<s n="n"/></r></p></e>
+      <e><p><l>nawa<s n="n"/></l><r>net<s n="adv"/></r></p></e>
+      <e><p><l>nawa<s n="n"/></l><r>basket<s n="n"/></r></p></e>
+      <!-- <e><p><l>neta katu<s n="n"/></l><r>young<s n="adj"/><s n="sint"/><s n="comp"/><b/>sibling<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>neta vava<s n="n"/></l><r>old<s n="adj"/><s n="sint"/><s n="comp"/><b/>sibling<s n="n"/></r></p></e> -->
+      <e><p><l>nginggisi<s n="n"/></l><r>cricket<s n="n"/></r></p></e>
+      <!-- <e><p><l>ngonggo<s n="n"/></l><r>*k<b/>*harmonika</r></p></e> -->
+      <e><p><l>niau<s n="n"/></l><r>cat<s n="n"/></r></p></e>
+      <e><p><l>ningguai<s n="n"/></l><r>turmeric<s n="n"/></r></p></e>
+      <!-- <e><p><l>niniai<s n="n"/></l><r>*nibong<b/>palm<s n="n"/></r></p></e> -->
+      <e><p><l>nioi<s n="n"/></l><r>knife<s n="n"/></r></p></e>
+      <!-- <e><p><l>noni<s n="n"/></l><r>*k<b/>bush<s n="n"/></r></p></e> -->
+      <e><p><l>nu<s n="n"/></l><r>island<s n="n"/></r></p></e>
+      <e><p><l>onta<s n="n"/></l><r>camel<s n="n"/></r></p></e>
+      <e><p><l>padamara<s n="n"/></l><r>lamp<s n="n"/></r></p></e>
+      <!-- <e><p><l>pam<s n="n"/></l><r>family<s n="adj"/><b/>group<s n="n"/></r></p></e> -->
+      <e><p><l>pam<s n="n"/></l><r>clan<s n="n"/></r></p></e>
+      <e><p><l>pandaya<s n="n"/></l><r>gun<s n="n"/></r></p></e>
+      <!-- <e><p><l>pandotu<s n="n"/></l><r>traditional<s n="adj"/><b/>drum<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>papano<s n="n"/></l><r>soft<s n="adj"/><s n="sint"/><b/>coral<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>papiri buo<s n="n"/></l><r>*k<b/>fruit<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>paramer<s n="n"/></l><r>new<s n="adj"/><s n="sint"/><b/>Guinea<s n="np"/><s n="top"/><s n="sg"/><b/>rosewood<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>pare<s n="n"/></l><r>*nipa<b/>palm<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>pare ai raro<s n="n"/></l><r>mangrove<s n="n"/><b/>forest<s n="adj"/></r></p></e> -->
+      <e><p><l>parekiani<s n="n"/></l><r>cassava<s n="n"/></r></p></e>
+      <e><p><l>pas<s n="n"/></l><r>rice<s n="n"/></r></p></e>
+      <e><p><l>pasar<s n="n"/></l><r>market<s n="n"/></r></p></e>
+      <!-- <e><p><l>paseda<s n="n"/></l><r>shell<s n="n"/><b/>bracelet<s n="n"/></r></p></e> -->
+      <e><p><l>pavuki<s n="n"/></l><r>corn<s n="n"/></r></p></e>
+      <!-- <e><p><l>pensil<s n="n"/></l><r>*k<b/>sea<s n="n"/><b/>cucumber<s n="n"/></r></p></e> -->
+      <e><p><l>pepar<s n="n"/></l><r>gorge<s n="n"/></r></p></e>
+      <e><p><l>pepar<s n="n"/></l><r>ravine<s n="n"/></r></p></e>
+      <e><p><l>peta<s n="n"/></l><r>map<s n="n"/></r></p></e>
+      <e><p><l>piamber(i)<s n="n"/></l><r>pineapple<s n="n"/></r></p></e>
+      <!-- <e><p><l>pianiau<s n="n"/></l><r>study<s n="n"/><b/>material<s n="n"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>pibata<s n="n"/></l><r>sea<s n="n"/><b/>turtle<s n="n"/></r></p></e> -->
+      <e><p><l>piderekari<s n="n"/></l><r>*mango</r></p></e>
+      <e><p><l>pimarandi<s n="n"/></l><r>jewelry<s n="n"/></r></p></e>
+      <e><p><l>pimarandi<s n="n"/></l><r>decoration<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>pimbarakiai<s n="n"/></l><r>ring<s n="n"/></r></p></e>
+      <e><p><l>pimuna<s n="n"/></l><r>pig<s n="n"/></r></p></e>
+      <!-- <e><p><l>piomberi<s n="n"/></l><r>*k<b/>sea<s n="n"/><b/>cucumber<s n="n"/></r></p></e> -->
+      <e><p><l>pipi<s n="n"/></l><r>money<s n="n"/></r></p></e>
+      <e><p><l>pirie<s n="n"/></l><r>snail<s n="n"/></r></p></e>
+      <e><p><l>pirie<s n="n"/></l><r>shell<s n="n"/></r></p></e>
+      <!-- <e><p><l>pirie inara<s n="n"/></l><r>*k<b/>seashell<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>pirie kuter<s n="n"/></l><r>*k<b/>*sm<b/>clam<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>pirie rawai<s n="n"/></l><r>snail<s n="n"/><b/>shell<s n="n"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>pirie tari<s n="n"/></l><r>*k<b/>small<s n="adj"/><s n="sint"/><b/>shell<s n="n"/></r></p></e> -->
+      <e><p><l>piriei uni<s n="n"/></l><r>clam<s n="n"/></r></p></e>
+      <!-- <e><p><l>pirio<s n="n"/></l><r>leaf<s n="n"/><b/>(<s n="lpar"/></r></p></e> -->
+      <!-- <e><p><l>pirio<s n="n"/></l><r>lily<s n="n"/><b/>pad<s n="n"/></r></p></e> -->
+      <e><p><l>pisia<s n="n"/></l><r>food<s n="adj"/></r></p></e>
+      <e><p><l>pisibara<s n="n"/></l><r>lizard<s n="n"/></r></p></e>
+      <e><p><l>pisibara<s n="n"/></l><r>animal<s n="adj"/></r></p></e>
+      <!-- <e><p><l>pisibara<s n="n"/></l><r>four-legged<s n="adj"/><b/>creature<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>piverotu<s n="n"/></l><r>traditional<s n="adj"/><b/>drum<s n="n"/></r></p></e> -->
+      <e><p><l>po<s n="n"/></l><r>front<s n="adv"/></r></p></e>
+      <e><p><l>ponori<s n="n"/></l><r>egg<s n="n"/></r></p></e>
+      <e><p><l>popoki<s n="n"/></l><r>eggplant<s n="n"/></r></p></e>
+      <!-- <e><p><l>poti<s n="n"/></l><r>small<s n="adj"/><s n="sint"/><b/>sea<s n="n"/><b/>turtle<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>pranko<s n="n"/></l><r>postage<s n="n"/><b/>stamp<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>purumi<s n="n"/></l><r>*sm<b/>seashell<s n="n"/></r></p></e> -->
+      <e><p><l>ra<s n="n"/></l><r>road<s n="adj"/></r></p></e>
+      <e><p><l>rabua nina<s n="n"/></l><r>now<s n="adv"/></r></p></e>
+      <!-- <e><p><l>raimu<s n="n"/></l><r>bay<s n="n"/><b/>area<s n="n"/></r></p></e> -->
+      <e><p><l>ramor<s n="n"/></l><r>bead<s n="n"/></r></p></e>
+      <e><p><l>ran(u)<s n="n"/></l><r>song<s n="n"/></r></p></e>
+      <e><p><l>ran(u)<s n="n"/></l><r>song<s n="n"/></r></p></e>
+      <!-- <e><p><l>randewa<s n="n"/></l><r>place<s n="n"/><b/>for<s n="cnjadv"/><b/>anchoring<s n="n"/><b/>canoe<s n="n"/><s n="pl"/></r></p></e> -->
+      <e><p><l>ranu<s n="n"/></l><r>song<s n="n"/></r></p></e>
+      <!-- <e><p><l>ranu sasiri<s n="n"/></l><r>traditional<s n="adj"/><b/>song<s n="n"/></r></p></e> -->
+      <e><p><l>rar(a)<s n="n"/></l><r>belonging<s n="n"/><s n="pl"/></r></p></e>
+      <!-- <e><p><l>rarevai<s n="n"/></l><r>*sm<b/>white<s n="adj"/><s n="sint"/><b/>seashell<s n="n"/></r></p></e> -->
+      <e><p><l>raria<s n="n"/></l><r>day<s n="n"/></r></p></e>
+      <e><p><l>raria ari<s n="n"/></l><r>Sunday<s n="n"/></r></p></e>
+      <!-- <e><p><l>raria veramowas<s n="n"/></l><r>future<s n="adj"/><b/>day<s n="n"/><s n="pl"/></r></p></e> -->
+      <e><p><l>raro<s n="n"/></l><r>inside<s n="adj"/></r></p></e>
+      <e><p><l>raro<s n="n"/></l><r>wide<s n="adj"/><s n="sint"/></r></p></e>
+      <!-- <e><p><l>raro<s n="n"/></l><r>deep<s n="adj"/><s n="sint"/><b/>river<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>raruo<s n="n"/></l><r>sibling<s n="n"/><b/>of<s n="pr"/><b/>the<b/>same<s n="adv"/><b/>generation<s n="n"/></r></p></e> -->
+      <e><p><l>rau<s n="n"/></l><r>neck<s n="n"/></r></p></e>
+      <!-- <e><p><l>rau<s n="n"/></l><r>edible<s n="adj"/><b/>leaf<s n="n"/></r></p></e> -->
+      <e><p><l>rau<s n="n"/></l><r>vegetable<s n="n"/></r></p></e>
+      <e><p><l>rau<s n="n"/></l><r>green<s n="n"/><s n="pl"/></r></p></e>
+      <!-- <e><p><l>rau buema<s n="n"/></l><r>edible<s n="adj"/><b/>hibiscus<s n="n"/><b/>leaf<s n="n"/></r></p></e> -->
+      <e><p><l>rau kasasor<s n="n"/></l><r>larynx<s n="n"/></r></p></e>
+      <e><p><l>rau kavat<s n="n"/></l><r>larynx<s n="n"/></r></p></e>
+      <e><p><l>rau kavat<s n="n"/></l><r>windpipe<s n="n"/></r></p></e>
+      <e><p><l>rau komawi<s n="n"/></l><r>spinach<s n="n"/></r></p></e>
+      <e><p><l>ravinie<s n="n"/></l><r>evening<s n="n"/></r></p></e>
+      <e><p><l>rawa<s n="n"/></l><r>thread<s n="n"/></r></p></e>
+      <e><p><l>rawa<s n="n"/></l><r>skin<s n="n"/></r></p></e>
+      <e><p><l>rawana<s n="n"/></l><r>sea<s n="n"/></r></p></e>
+      <e><p><l>rawe<s n="n"/></l><r>crow<s n="n"/></r></p></e>
+      <e><p><l>rawesi<s n="n"/></l><r>side<s n="adv"/></r></p></e>
+      <e><p><l>rawi<s n="n"/></l><r>spring<s n="n"/></r></p></e>
+      <e><p><l>re<s n="n"/></l><r>eye<s n="n"/></r></p></e>
+      <e><p><l>re<s n="n"/></l><r>point<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>re karu buo<s n="n"/></l><r>tear<s n="n"/></r></p></e>
+      <e><p><l>re tu<s n="n"/></l><r>eyelash<s n="n"/></r></p></e>
+      <e><p><l>re vavuru<s n="n"/></l><r>eyebrow<s n="n"/></r></p></e>
+      <e><p><l>re vavuru<s n="n"/></l><r>eyelash<s n="n"/></r></p></e>
+      <e><p><l>re worera<s n="n"/></l><r>forehead<s n="n"/></r></p></e>
+      <e><p><l>rebuki<s n="n"/></l><r>stone<s n="n"/></r></p></e>
+      <e><p><l>rebuki<s n="n"/></l><r>rock<s n="n"/></r></p></e>
+      <e><p><l>rebuosina<s n="n"/></l><r>forehead<s n="n"/></r></p></e>
+      <e><p><l>rei<s n="n"/></l><r>land<s n="n"/></r></p></e>
+      <e><p><l>rei<s n="n"/></l><r>shore<s n="n"/></r></p></e>
+      <!-- <e><p><l>rema buo<s n="n"/></l><r>betel<s n="n"/><b/>pepper<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>rema buo<s n="n"/></l><r>chew<s n="vblex"/><s n="pp"/><b/>with<s n="pr"/><b/>betel<s n="n"/><b/>nut<s n="n"/></r></p></e> -->
+      <e><p><l>repo<s n="n"/></l><r>bible<s n="n"/></r></p></e>
+      <e><p><l>ret<s n="n"/></l><r>needle<s n="n"/></r></p></e>
+      <e><p><l>ri<s n="n"/></l><r>outside<s n="adj"/></r></p></e>
+      <!-- <e><p><l>riar<s n="n"/></l><r>a<s n="det"/><s n="ind"/><s n="sg"/><b/>spacious<s n="adj"/><b/>place<s n="n"/><b/>(<s n="lpar"/></r></p></e> -->
+      <e><p><l>riat<s n="n"/></l><r>blood<s n="adj"/></r></p></e>
+      <!-- <e><p><l>roi<s n="n"/></l><r>hearth<s n="n"/><b/>for<s n="cnjadv"/><b/>smoke<s n="vblex"/><s n="pprs"/><b/>fish<s n="n"/></r></p></e> -->
+      <e><p><l>romi<s n="n"/></l><r>garden<s n="n"/></r></p></e>
+      <e><p><l>romi ai buo<s n="n"/></l><r>orchard<s n="n"/></r></p></e>
+      <e><p><l>ron<s n="n"/></l><r>*ironwood</r></p></e>
+      <e><p><l>rora<s n="n"/></l><r>heaven<s n="n"/></r></p></e>
+      <e><p><l>rosua<s n="n"/></l><r>frog<s n="n"/></r></p></e>
+      <e><p><l>rota<s n="n"/></l><r>bag<s n="n"/></r></p></e>
+      <!-- <e><p><l>rota sua<s n="n"/></l><r>small<s n="adj"/><s n="sint"/><b/>net<s n="adv"/><b/>bag<s n="n"/></r></p></e> -->
+      <e><p><l>ru<s n="n"/></l><r>head<s n="n"/></r></p></e>
+      <e><p><l>ru nandau<s n="n"/></l><r>hair<s n="n"/></r></p></e>
+      <e><p><l>rubua<s n="n"/></l><r>sand<s n="n"/></r></p></e>
+      <e><p><l>rumit<s n="n"/></l><r>alga<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>ruru<s n="n"/></l><r>lake<s n="n"/></r></p></e>
+      <e><p><l>rurua<s n="n"/></l><r>*soursop</r></p></e>
+      <e><p><l>rusa<s n="n"/></l><r>deer<s n="n"/></r></p></e>
+      <e><p><l>rusara<s n="n"/></l><r>story<s n="n"/></r></p></e>
+      <e><p><l>rusasiwa<s n="n"/></l><r>horn<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>rutu<s n="n"/></l><r>louse<s n="n"/></r></p></e>
+      <e><p><l>rutu besaire<s n="n"/></l><r>bedbug<s n="n"/></r></p></e>
+      <e><p><l>ruwainunu<s n="n"/></l><r>spirit<s n="n"/></r></p></e>
+      <e><p><l>ruwainunu<s n="n"/></l><r>ghost<s n="n"/></r></p></e>
+      <e><p><l>ruwainunu sren<s n="n"/></l><r>holy<s n="adj"/><s n="sint"/></r></p></e>
+      <!-- <e><p><l>ruwera<s n="n"/></l><r>spirit<s n="n"/><b/>brain<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>saba<s n="n"/></l><r>spine<s n="n"/><b/>of<s n="pr"/><b/>sago<s n="n"/><b/>leaf<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>sama<s n="n"/></l><r>rear<s n="adj"/><b/>end<s n="n"/></r></p></e> -->
+      <e><p><l>sama<s n="n"/></l><r>buttock<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>sama kai<s n="n"/></l><r>tail<s n="n"/></r></p></e>
+      <e><p><l>samaraka<s n="n"/></l><r>watermelon<s n="n"/></r></p></e>
+      <e><p><l>sambaku<s n="n"/></l><r>tobacco<s n="n"/></r></p></e>
+      <!-- <e><p><l>sanai<s n="n"/></l><r>pig<s n="n"/><b/>spear<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>sanaipori<s n="n"/></l><r>*k<b/>fruit<s n="n"/></r></p></e> -->
+      <e><p><l>sanaipori<s n="n"/></l><r>*langsat</r></p></e>
+      <!-- <e><p><l>sanaivepori<s n="n"/></l><r>*k<b/>fruit<s n="n"/></r></p></e> -->
+      <e><p><l>sanaivepori<s n="n"/></l><r>*langsat</r></p></e>
+      <e><p><l>sananai<s n="n"/></l><r>spear<s n="n"/></r></p></e>
+      <e><p><l>sananioi<s n="n"/></l><r>spear<s n="n"/></r></p></e>
+      <e><p><l>sane<s n="n"/></l><r>stomach<s n="n"/></r></p></e>
+      <e><p><l>sanepaya<s n="n"/></l><r>think<s n="vblex"/><s n="past"/></r></p></e>
+      <e><p><l>saner<s n="n"/></l><r>*ironwood</r></p></e>
+      <e><p><l>sanewai<s n="n"/></l><r>intestine<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>sano<s n="n"/></l><r>name<s n="n"/></r></p></e>
+      <!-- <e><p><l>sapa<s n="n"/></l><r>shell<s n="n"/><b/>jewelry<s n="n"/></r></p></e> -->
+      <e><p><l>sapami<s n="n"/></l><r>grasshopper<s n="n"/></r></p></e>
+      <e><p><l>sapatu<s n="n"/></l><r>shoe<s n="n"/></r></p></e>
+      <e><p><l>sapi<s n="n"/></l><r>cow<s n="n"/></r></p></e>
+      <e><p><l>sapui<s n="n"/></l><r>*lemongrass</r></p></e>
+      <e><p><l>sarak<s n="n"/></l><r>bracelet<s n="n"/></r></p></e>
+      <e><p><l>sararer<s n="n"/></l><r>cricket<s n="n"/></r></p></e>
+      <e><p><l>sarata (rau)<s n="n"/></l><r>*Laportea</r></p></e>
+      <!-- <e><p><l>sarawi<s n="n"/></l><r>*Decumana<b/>jellyfish<s n="n"/><b/>sail<s n="n"/></r></p></e> -->
+      <e><p><l>sarepa<s n="n"/></l><r>dew<s n="n"/></r></p></e>
+      <!-- <e><p><l>sarera<s n="n"/></l><r>fishing<s n="n"/><b/>pole<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>sarera<s n="n"/></l><r>fishing<s n="n"/><b/>pole<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>sarou<s n="n"/></l><r>small<s n="adj"/><s n="sint"/><b/>mangrove<s n="n"/><b/>tree<s n="n"/></r></p></e> -->
+      <e><p><l>sarowi<s n="n"/></l><r>whale<s n="n"/></r></p></e>
+      <!-- <e><p><l>sasami<s n="n"/></l><r>small<s n="adj"/><s n="sint"/><b/>floor<s n="n"/><b/>mat<s n="adj"/></r></p></e> -->
+      <e><p><l>sasi<s n="n"/></l><r>salt<s n="n"/></r></p></e>
+      <e><p><l>sasi<s n="n"/></l><r>seawater<s n="n"/></r></p></e>
+      <e><p><l>sasi<s n="n"/></l><r>feces<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>sasi<s n="n"/></l><r>defecate<s n="vblex"/></r></p></e>
+      <e><p><l>sasi dire<s n="n"/></l><r>seashore<s n="n"/></r></p></e>
+      <e><p><l>sasi dire<s n="n"/></l><r>beach<s n="n"/></r></p></e>
+      <e><p><l>sasu<s n="n"/></l><r>clothes<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>sasu sama<s n="n"/></l><r>pants<s n="n"/></r></p></e>
+      <e><p><l>sasu vara<s n="n"/></l><r>shirt<s n="n"/></r></p></e>
+      <!-- <e><p><l>sasuana<s n="n"/></l><r>*k<b/>shell<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>sasuana<s n="n"/></l><r>(<s n="lpar"/><b/>operculum<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>sasuana<s n="n"/></l><r>Pacific<s n="np"/><s n="top"/><s n="sg"/><b/>cat<s n="n"/><b/>*mata<b/>*bulan</r></p></e> -->
+      <!-- <e><p><l>saveri<s n="n"/></l><r>*k<b/>large<s n="adj"/><s n="sint"/><b/>shell<s n="n"/></r></p></e> -->
+      <e><p><l>savi-savi<s n="n"/></l><r>maggot<s n="n"/></r></p></e>
+      <!-- <e><p><l>savu<s n="n"/></l><r>betel<s n="n"/><b/>nut<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>sawa<s n="n"/></l><r>lime<s n="n"/><b/>(<s n="lpar"/><b/>betel<s n="n"/></r></p></e> -->
+      <e><p><l>sawani<s n="n"/></l><r>husband<s n="n"/></r></p></e>
+      <e><p><l>sembie<s n="n"/></l><r>moon<s n="n"/></r></p></e>
+      <!-- <e><p><l>sembiei tiutira<s n="n"/></l><r>full<s n="adj"/><s n="sint"/><b/>moon<s n="n"/></r></p></e> -->
+      <e><p><l>sembiei viesawarou<s n="n"/></l><r>*crescent</r></p></e>
+      <!-- <e><p><l>sende<s n="n"/></l><r>moon<s n="n"/><b/>bow<s n="n"/><b/>of<s n="pr"/><b/>a<s n="det"/><s n="ind"/><s n="sg"/><b/>canoe<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>senderei<s n="n"/></l><r>outrigger<s n="n"/><b/>connector<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>sendevara<s n="n"/></l><r>outrigger<s n="n"/><b/>boom<s n="n"/></r></p></e> -->
+      <e><p><l>sera<s n="n"/></l><r>net<s n="adv"/></r></p></e>
+      <!-- <e><p><l>serei<s n="n"/></l><r>*sarong<b/>cloth<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>seren<s n="n"/></l><r>holy<s n="adj"/><s n="sint"/><b/>place<s n="n"/></r></p></e> -->
+      <e><p><l>sereni<s n="n"/></l><r>*papaya</r></p></e>
+      <!-- <e><p><l>sereni rau<s n="n"/></l><r>*papaya<b/>leaf<s n="n"/><s n="pl"/></r></p></e> -->
+      <e><p><l>setinunuma<s n="n"/></l><r>gun<s n="n"/></r></p></e>
+      <!-- <e><p><l>sianggono<s n="n"/></l><r>*pandan<b/>fruit<s n="n"/></r></p></e> -->
+      <e><p><l>sien<s n="n"/></l><r>god<s n="n"/></r></p></e>
+      <e><p><l>sien<s n="n"/></l><r>master<s n="adj"/></r></p></e>
+      <e><p><l>sievis<s n="n"/></l><r>rainbow<s n="n"/></r></p></e>
+      <e><p><l>sikop<s n="n"/></l><r>shovel<s n="n"/></r></p></e>
+      <e><p><l>simonbuon<s n="n"/></l><r>candy<s n="n"/></r></p></e>
+      <e><p><l>simuti<s n="n"/></l><r>orange<s n="adj"/></r></p></e>
+      <e><p><l>simuti<s n="n"/></l><r>lemon<s n="n"/></r></p></e>
+      <e><p><l>simuti katu<s n="n"/></l><r>lime<s n="n"/></r></p></e>
+      <e><p><l>simuti pimasa<s n="n"/></l><r>*pomelo</r></p></e>
+      <!-- <e><p><l>simuti sina<s n="n"/></l><r>*k<b/>small<s n="adj"/><s n="sint"/><b/>citrus<s n="adj"/></r></p></e> -->
+      <e><p><l>sina<s n="n"/></l><r>spine<s n="n"/></r></p></e>
+      <e><p><l>sina<s n="n"/></l><r>thorn<s n="n"/></r></p></e>
+      <e><p><l>sina<s n="n"/></l><r>bone<s n="n"/></r></p></e>
+      <e><p><l>since<s n="n"/></l><r>girl<s n="n"/></r></p></e>
+      <e><p><l>singa<s n="n"/></l><r>lion<s n="n"/></r></p></e>
+      <e><p><l>sinia<s n="n"/></l><r>mother<s n="n"/></r></p></e>
+      <!-- <e><p><l>sinia buai<s n="n"/></l><r>father<s n="n"/><b/>old<s n="adj"/><s n="sint"/><s n="comp"/><b/>sister<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>sinia katu<s n="n"/></l><r>mother<s n="n"/><b/>young<s n="adj"/><s n="sint"/><s n="comp"/><b/>sister<s n="n"/></r></p></e> -->
+      <e><p><l>sinia verau tutiri<s n="n"/></l><r>stepmother<s n="n"/></r></p></e>
+      <e><p><l>sinitu<s n="n"/></l><r>person<s n="n"/></r></p></e>
+      <e><p><l>sintu<s n="n"/></l><r>mankind<s n="n"/></r></p></e>
+      <e><p><l>sintu<s n="n"/></l><r>person<s n="n"/></r></p></e>
+      <e><p><l>sis<s n="n"/></l><r>cloth<s n="n"/></r></p></e>
+      <e><p><l>sisera amber<s n="n"/></l><r>European<s n="adj"/></r></p></e>
+      <e><p><l>sisera amber<s n="n"/></l><r>westerner<s n="n"/></r></p></e>
+      <e><p><l>sivererei<s n="n"/></l><r>star<s n="n"/></r></p></e>
+      <!-- <e><p><l>soma<s n="n"/></l><r>bamboo<s n="n"/><b/>float<s n="n"/><b/>of<s n="pr"/><b/>a<s n="det"/><s n="ind"/><s n="sg"/><b/>outrigger<s n="n"/><b/>canoe<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>somasi<s n="n"/></l><r>land<s n="n"/><b/>snail<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>somotui<s n="n"/></l><r>*k<b/>rat<s n="n"/><b/>which<s n="det"/><s n="itg"/><s n="sp"/><b/>eat<s n="vblex"/><s n="pres"/><s n="p3"/><s n="sg"/><b/>fruit<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>sondiei<s n="n"/></l><r>ground<s n="n"/><b/>*cuscus</r></p></e> -->
+      <e><p><l>sondiei<s n="n"/></l><r>*phalanger</r></p></e>
+      <e><p><l>sondo<s n="n"/></l><r>spoon<s n="n"/></r></p></e>
+      <e><p><l>sor<s n="n"/></l><r>container<s n="n"/></r></p></e>
+      <e><p><l>sor<s n="n"/></l><r>wrapper<s n="n"/></r></p></e>
+      <e><p><l>sor<s n="n"/></l><r>sheath<s n="n"/></r></p></e>
+      <e><p><l>sora<s n="n"/></l><r>gap<s n="n"/></r></p></e>
+      <e><p><l>sora<s n="n"/></l><r>space<s n="adj"/></r></p></e>
+      <e><p><l>sora<s n="n"/></l><r>opening<s n="adj"/></r></p></e>
+      <e><p><l>sore<s n="n"/></l><r>mouth<s n="n"/></r></p></e>
+      <e><p><l>sore<s n="n"/></l><r>lip<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>sore papo<s n="n"/></l><r>saliva<s n="n"/></r></p></e>
+      <e><p><l>sore tapare<s n="n"/></l><r>tongue<s n="n"/></r></p></e>
+      <e><p><l>sotauri<s n="n"/></l><r>spear<s n="n"/></r></p></e>
+      <e><p><l>sotauri<s n="n"/></l><r>spear<s n="n"/></r></p></e>
+      <e><p><l>suep<s n="n"/></l><r>cave<s n="n"/></r></p></e>
+      <e><p><l>sumbe<s n="n"/></l><r>machete<s n="n"/></r></p></e>
+      <e><p><l>sumo<s n="n"/></l><r>aunt<s n="n"/></r></p></e>
+      <e><p><l>suo<s n="n"/></l><r>peninsula<s n="n"/></r></p></e>
+      <e><p><l>suo<s n="n"/></l><r>nose<s n="n"/></r></p></e>
+      <e><p><l>suo kamberei<s n="n"/></l><r>nostril<s n="n"/></r></p></e>
+      <e><p><l>suo mamu<s n="n"/></l><r>snot<s n="n"/></r></p></e>
+      <!-- <e><p><l>suomabut<s n="n"/></l><r>*k<b/>*bandicoot</r></p></e> -->
+      <e><p><l>suomus<s n="n"/></l><r>shark<s n="n"/></r></p></e>
+      <e><p><l>suopapus<s n="n"/></l><r>foam<s n="n"/></r></p></e>
+      <e><p><l>suora sasu<s n="n"/></l><r>*sarong</r></p></e>
+      <e><p><l>suovavuru<s n="n"/></l><r>mustache<s n="n"/></r></p></e>
+      <e><p><l>surate<s n="n"/></l><r>letter<s n="n"/></r></p></e>
+      <e><p><l>surpoti<s n="n"/></l><r>comb<s n="n"/></r></p></e>
+      <!-- <e><p><l>susu<s n="n"/></l><r>*k<b/>sea<s n="n"/><b/>cucumber<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>tabariati<s n="n"/></l><r>*k<b/>sea<s n="n"/><b/>snail<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>tabura<s n="n"/></l><r>conch<s n="n"/><b/>shell<s n="n"/></r></p></e> -->
+      <e><p><l>tai<s n="n"/></l><r>father<s n="n"/></r></p></e>
+      <e><p><l>tama<s n="n"/></l><r>father<s n="n"/></r></p></e>
+      <e><p><l>tama<s n="n"/></l><r>axe<s n="n"/></r></p></e>
+      <e><p><l>tama verau tutiri<s n="n"/></l><r>stepfather<s n="n"/></r></p></e>
+      <!-- <e><p><l>tamambanei<s n="n"/></l><r>*k<b/>tree<s n="n"/></r></p></e> -->
+      <e><p><l>tanduk<s n="n"/></l><r>antler<s n="n"/></r></p></e>
+      <e><p><l>tapu<s n="n"/></l><r>grandparent<s n="n"/></r></p></e>
+      <e><p><l>tapu<s n="n"/></l><r>grandchild<s n="n"/></r></p></e>
+      <!-- <e><p><l>tara<s n="n"/></l><r>fish<s n="n"/><b/>spear<s n="n"/></r></p></e> -->
+      <e><p><l>tarai<s n="n"/></l><r>body<s n="n"/></r></p></e>
+      <e><p><l>tarai<s n="n"/></l><r>flesh<s n="n"/></r></p></e>
+      <e><p><l>tarakondi<s n="n"/></l><r>ear<s n="n"/></r></p></e>
+      <e><p><l>tararai<s n="n"/></l><r>cheek<s n="n"/></r></p></e>
+      <e><p><l>tararai makobar<s n="n"/></l><r>*dimples</r></p></e>
+      <e><p><l>tatar<s n="n"/></l><r>sin<s n="n"/></r></p></e>
+      <e><p><l>tati<s n="n"/></l><r>grandfather<s n="n"/></r></p></e>
+      <e><p><l>tatopa<s n="n"/></l><r>story<s n="n"/></r></p></e>
+      <e><p><l>tau<s n="n"/></l><r>sago<s n="n"/></r></p></e>
+      <!-- <e><p><l>tau asu<s n="n"/></l><r>sago<s n="n"/><b/>mix<s n="vblex"/><s n="pp"/><b/>with<s n="pr"/><b/>*buah<b/>*hitam<b/>fruit<s n="n"/></r></p></e> -->
+      <e><p><l>taune<s n="n"/></l><r>year<s n="n"/></r></p></e>
+      <e><p><l>tavai<s n="n"/></l><r>breeze<s n="n"/></r></p></e>
+      <e><p><l>tawa<s n="n"/></l><r>*matoa</r></p></e>
+      <e><p><l>tawai<s n="n"/></l><r>snake<s n="n"/></r></p></e>
+      <e><p><l>tenam<s n="n"/></l><r>live<s n="vblex"/></r></p></e>
+      <e><p><l>tenam<s n="n"/></l><r>life<s n="n"/></r></p></e>
+      <e><p><l>timuri<s n="n"/></l><r>*singkong</r></p></e>
+      <!-- <e><p><l>timuri rau<s n="n"/></l><r>cassava<s n="n"/><b/>leaf<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>tiup<s n="n"/></l><r>billow<s n="vblex"/><s n="pprs"/><b/>smoke<s n="n"/></r></p></e> -->
+      <e><p><l>toko<s n="n"/></l><r>store<s n="n"/></r></p></e>
+      <e><p><l>tomboro<s n="n"/></l><r>owl<s n="n"/></r></p></e>
+      <!-- <e><p><l>tonggiau<s n="n"/></l><r>floor<s n="n"/><b/>mat<s n="adj"/></r></p></e> -->
+      <e><p><l>toples<s n="n"/></l><r>jar<s n="n"/></r></p></e>
+      <e><p><l>tu<s n="n"/></l><r>fur<s n="n"/></r></p></e>
+      <e><p><l>tu<s n="n"/></l><r>bay<s n="n"/></r></p></e>
+      <e><p><l>tuba<s n="n"/></l><r>*treetop</r></p></e>
+      <!-- <e><p><l>tuvo<s n="n"/></l><r>local<s n="adj"/><b/>ruler<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>tuvo<s n="n"/></l><r>holy<s n="adj"/><s n="sint"/><b/>person<s n="n"/></r></p></e> -->
+      <e><p><l>unu<s n="n"/></l><r>honey<s n="n"/></r></p></e>
+      <e><p><l>uta(n)<s n="n"/></l><r>place<s n="n"/></r></p></e>
+      <e><p><l>uta(n)<s n="n"/></l><r>weather<s n="n"/></r></p></e>
+      <e><p><l>uvi<s n="n"/></l><r>sweet<b/>potato<s n="n"/></r></p></e>
+      <e><p><l>uvi<s n="n"/></l><r>yam<s n="n"/></r></p></e>
+      <!-- <e><p><l>uwi rau<s n="n"/></l><r>yam<s n="n"/><b/>leaf<s n="n"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>vakirin<s n="n"/></l><r>*k<b/>large<s n="adj"/><s n="sint"/><b/>frog<s n="n"/></r></p></e> -->
+      <e><p><l>vara<s n="n"/></l><r>hand<s n="n"/></r></p></e>
+      <!-- <e><p><l>vara kei katu<s n="n"/></l><r>*pinkie<b/>finger<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>vara kei rabua<s n="n"/></l><r>middle<s n="adj"/><b/>finger<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>vara kei rabua<s n="n"/></l><r>ring<s n="n"/><b/>finger<s n="n"/></r></p></e> -->
+      <e><p><l>vara kei sinia<s n="n"/></l><r>thumb<s n="n"/></r></p></e>
+      <e><p><l>vara kiai<s n="n"/></l><r>finger<s n="n"/></r></p></e>
+      <e><p><l>vara kiai dir<s n="n"/></l><r>fingernail<s n="n"/></r></p></e>
+      <!-- <e><p><l>vara kiai virusara<s n="n"/></l><r>index<s n="n"/><b/>finger<s n="n"/></r></p></e> -->
+      <e><p><l>vara komboti<s n="n"/></l><r>biceps<s n="n"/></r></p></e>
+      <!-- <e><p><l>vara tarai<s n="n"/></l><r>flesh<s n="n"/><b/>of<s n="pr"/><b/>hand<s n="n"/></r></p></e> -->
+      <e><p><l>varabuo<s n="n"/></l><r>shoulder<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>varadiara<s n="n"/></l><r>shoulder<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>varakamai<s n="n"/></l><r>arm<s n="n"/></r></p></e>
+      <e><p><l>varakamai<s n="n"/></l><r>wrist<s n="n"/></r></p></e>
+      <e><p><l>vararau<s n="n"/></l><r>wing<s n="n"/></r></p></e>
+      <e><p><l>varava<s n="n"/></l><r>palm<s n="n"/></r></p></e>
+      <e><p><l>varavu<s n="n"/></l><r>*verandah</r></p></e>
+      <e><p><l>vava<s n="n"/></l><r>below<s n="adv"/></r></p></e>
+      <e><p><l>vava<s n="n"/></l><r>under<s n="adv"/></r></p></e>
+      <e><p><l>vava<s n="n"/></l><r>underneath<s n="adv"/></r></p></e>
+      <e><p><l>vavesapo<s n="n"/></l><r>airplane<s n="n"/></r></p></e>
+      <e><p><l>vavi<s n="n"/></l><r>woman<s n="n"/></r></p></e>
+      <e><p><l>vavi<s n="n"/></l><r>female<s n="adj"/></r></p></e>
+      <e><p><l>vavo<s n="n"/></l><r>top<s n="adj"/></r></p></e>
+      <e><p><l>vavo<s n="n"/></l><r>above<s n="adv"/></r></p></e>
+      <!-- <e><p><l>vekatar<s n="n"/></l><r>tree<s n="n"/><b/>*cuscus</r></p></e> -->
+      <e><p><l>vemai<s n="n"/></l><r>fat<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>venamaria<s n="n"/></l><r>eel<s n="n"/></r></p></e>
+      <e><p><l>venavavo<s n="n"/></l><r>*cuscus</r></p></e>
+      <!-- <e><p><l>vepori mararau<s n="n"/></l><r>pray<s n="vblex"/><s n="pprs"/><b/>*mantis</r></p></e> -->
+      <!-- <e><p><l>veradiru<s n="n"/></l><r>*k<b/>sea<s n="n"/><b/>cucumber<s n="n"/></r></p></e> -->
+      <e><p><l>vera-vera<s n="n"/></l><r>lightning<s n="n"/></r></p></e>
+      <e><p><l>veru mon<s n="n"/></l><r>witch<s n="n"/></r></p></e>
+      <e><p><l>veru mon<s n="n"/></l><r>sorcerer<s n="n"/></r></p></e>
+      <!-- <e><p><l>viarini<s n="n"/></l><r>*k<b/>sea<s n="n"/><b/>cucumber<s n="n"/></r></p></e> -->
+      <e><p><l>vienana<s n="n"/></l><r>mucus<s n="n"/></r></p></e>
+      <e><p><l>vinie<s n="n"/></l><r>wife<s n="n"/></r></p></e>
+      <e><p><l>visa<s n="n"/></l><r>grandmother<s n="n"/></r></p></e>
+      <e><p><l>visisiwa<s n="n"/></l><r>sprout<s n="n"/></r></p></e>
+      <e><p><l>vo<s n="n"/></l><r>paddle<s n="vblex"/></r></p></e>
+      <e><p><l>vuvusa<s n="n"/></l><r>liver<s n="n"/></r></p></e>
+      <e><p><l>wa<s n="n"/></l><r>boat<s n="n"/></r></p></e>
+      <e><p><l>wa<s n="n"/></l><r>canoe<s n="n"/></r></p></e>
+      <e><p><l>wa sarawi<s n="n"/></l><r>sailboat<s n="n"/></r></p></e>
+      <e><p><l>wa vesapo<s n="n"/></l><r>airplane<s n="n"/></r></p></e>
+      <e><p><l>wai<s n="n"/></l><r>rope<s n="n"/></r></p></e>
+      <e><p><l>wai<s n="n"/></l><r>vine<s n="n"/></r></p></e>
+      <!-- <e><p><l>wai biriani<s n="n"/></l><r>*k<b/>vine<s n="n"/><b/>eat<s n="vblex"/><s n="pp"/><b/>by<s n="adv"/><b/>*cuscus</r></p></e> -->
+      <!-- <e><p><l>wai bita<s n="n"/></l><r>*rattan<b/>string<s n="n"/></r></p></e> -->
+      <e><p><l>wair<s n="n"/></l><r>vein<s n="n"/></r></p></e>
+      <!-- <e><p><l>wakera<s n="n"/></l><r>tree<s n="n"/><b/>kangaroo<s n="n"/></r></p></e> -->
+      <e><p><l>wam<s n="n"/></l><r>blood<s n="adj"/></r></p></e>
+      <!-- <e><p><l>wamar<s n="n"/></l><r>Papuan<s n="n"/><b/>(<s n="lpar"/><b/>*hornbill</r></p></e> -->
+      <e><p><l>wamesa<s n="n"/></l><r>*pufferfish</r></p></e>
+      <e><p><l>wana<s n="n"/></l><r>wind<s n="n"/></r></p></e>
+      <e><p><l>wana saso<s n="n"/></l><r>storm<s n="n"/></r></p></e>
+      <e><p><l>wanggar<s n="n"/></l><r>mouse<s n="n"/></r></p></e>
+      <e><p><l>wanunu<s n="n"/></l><r>shadow<s n="n"/></r></p></e>
+      <e><p><l>war<s n="n"/></l><r>root<s n="n"/></r></p></e>
+      <!-- <e><p><l>wara tu<s n="n"/></l><r>body<s n="n"/><b/>hair<s n="n"/></r></p></e> -->
+      <e><p><l>ware<s n="n"/></l><r>fence<s n="n"/></r></p></e>
+      <e><p><l>wasarau<s n="n"/></l><r>paper<s n="n"/></r></p></e>
+      <e><p><l>wasarau<s n="n"/></l><r>letter<s n="n"/></r></p></e>
+      <e><p><l>wera<s n="n"/></l><r>marrow<s n="n"/></r></p></e>
+      <!-- <e><p><l>weta<s n="n"/></l><r>*k<b/>tray<s n="n"/></r></p></e> -->
+      <e><p><l>wevewi<s n="n"/></l><r>hill<s n="n"/></r></p></e>
+      <e><p><l>wis<s n="n"/></l><r>mountain<s n="n"/></r></p></e>
+      <e><p><l>wisa<s n="n"/></l><r>grandmother<s n="n"/></r></p></e>
+      <e><p><l>wominggo<s n="n"/></l><r>sorrow<s n="n"/></r></p></e>
+      <e><p><l>wominggo<s n="n"/></l><r>grief<s n="n"/></r></p></e>
+      <e><p><l>wona<s n="n"/></l><r>dog<s n="n"/></r></p></e>
+      <e><p><l>wonggei<s n="n"/></l><r>*cassowary</r></p></e>
+      <e><p><l>wonggia<s n="n"/></l><r>*gunwhales</r></p></e>
+      <!-- <e><p><l>wonioi<s n="n"/></l><r>*k<b/>traditional<s n="adj"/><b/>wooden<s n="adj"/><b/>bowl<s n="n"/></r></p></e> -->
+      <e><p><l>wopi<s n="n"/></l><r>gall<s n="n"/></r></p></e>
+      <e><p><l>wopi<s n="n"/></l><r>bile<s n="n"/></r></p></e>
+      <e><p><l>wor<s n="n"/></l><r>sun<s n="n"/></r></p></e>
+      <e><p><l>wuyu<s n="n"/></l><r>smoke<s n="n"/></r></p></e>
+      <e><p><l>yaba<s n="n"/></l><r>house<s n="n"/></r></p></e>
+      <e><p><l>yai<s n="n"/></l><r>father<s n="n"/></r></p></e>
+      <e><p><l>yar<s n="n"/></l><r>coral<s n="n"/></r></p></e>
+      <!-- <e><p><l>yer<s n="n"/></l><r>fish<s n="n"/><b/>poison<s n="n"/></r></p></e> -->
+      <e><p><l>at<s n="num"/></l><r>four<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>muandu<s n="num"/></l><r>two<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>rim e at<s n="num"/></l><r>nine<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>rim e muandu<s n="num"/></l><r>seven<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>rim e siri<s n="num"/></l><r>six<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>rim e toru<s n="num"/></l><r>eight<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>rime<s n="num"/></l><r>five<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>rime at<s n="num"/></l><r>nine<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>rime muandu<s n="num"/></l><r>seven<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>rime siri<s n="num"/></l><r>six<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>rime toru<s n="num"/></l><r>eight<b/>hundred<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>siaran toru<s n="num"/></l><r>thirty<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>siri<s n="num"/></l><r>one<s n="num"/><s n="sg"/></r></p></e>
+      <e><p><l>sura<s n="num"/></l><r>ten<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>sura e at<s n="num"/></l><r>fourteen<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>sura e muandu<s n="num"/></l><r>twelve<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>sura e rime at<s n="num"/></l><r>nineteen<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>sura e rime muandu<s n="num"/></l><r>seventeen<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>sura e rime siri<s n="num"/></l><r>sixteen<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>sura e rime toru<s n="num"/></l><r>eighteen<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>sura e siri<s n="num"/></l><r>eleven<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>sura e toru<s n="num"/></l><r>thirteen<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>toru<s n="num"/></l><r>three<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>utin<s n="num"/></l><r>twenty<s n="num"/><s n="pl"/></r></p></e>
+      <!-- <e><p><l>utin siri<s n="num"/></l><r>twenty<s n="num"/><s n="pl"/><b/>one<s n="num"/><s n="sg"/></r></p></e> -->
+      <e><p><l>utin siri<s n="num"/></l><r>twenty<s n="num"/><s n="pl"/></r></p></e>
+      <e><p><l>penai<s n="prt"/></l><r>do<s n="vbdo"/><s n="pres"/>+not<s n="adv"/></r></p></e>
+      <e><p><l>pivai<s n="prt"/></l><r>no<s n="adv"/></r></p></e>
+      <e><p><l>pivai<s n="prt"/></l><r>not<s n="adv"/></r></p></e>
+      <e><p><l>sa<s n="prt"/></l><r>do<s n="vbdo"/><s n="pres"/>+not<s n="adv"/></r></p></e>
+      <!-- <e><p><l>te<s n="prt"/></l><r>question<s n="n"/><b/>particle<s n="n"/></r></p></e> -->
+      <e><p><l>te<s n="prt"/></l><r>right<s n="adj"/></r></p></e>
+      <e><p><l>te<s n="prt"/></l><r>*eh</r></p></e>
+      <e><p><l>va<s n="prt"/></l><r>no<s n="adv"/></r></p></e>
+      <e><p><l>va<s n="prt"/></l><r>not<s n="adv"/></r></p></e>
+      <e><p><l>do<s n="pr"/></l><r>to<s n="pr"/></r></p></e>
+      <e><p><l>na<s n="pr"/></l><r>at<s n="pr"/></r></p></e>
+      <!-- <e><p><l>pui<s n="pr"/></l><r>in<s n="adv"/><b/>behind<s n="adv"/></r></p></e> -->
+      <e><p><l>siwa(re)<s n="pr"/></l><r>near<s n="adv"/></r></p></e>
+      <e><p><l>so<s n="pr"/></l><r>to<s n="pr"/></r></p></e>
+      <e><p><l>susa<s n="pr"/></l><r>into<s n="pr"/></r></p></e>
+      <e><p><l>to<s n="pr"/></l><r>until<s n="cnjsub"/></r></p></e>
+      <e><p><l>tua<s n="pr"/></l><r>past<s n="adj"/></r></p></e>
+      <e><p><l>tuti(re)<s n="pr"/></l><r>with<s n="pr"/></r></p></e>
+      <e><p><l>veito<s n="pr"/></l><r>until<s n="cnjsub"/></r></p></e>
+      <e><p><l>ama(te)<s n="prn"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+      <!-- <e><p><l>ama(te)<s n="prn"/></l><r>1<s n="num"/><b/>*excl<b/>pronoun<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>amatoru<s n="prn"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/><b/>three<s n="num"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>amatoru<s n="prn"/></l><r>1<s n="num"/><b/>*excl<b/>pronoun<s n="n"/></r></p></e> -->
+      <e><p><l>andi<s n="prn"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+      <!-- <e><p><l>andi<s n="prn"/></l><r>3<s n="num"/><b/>pronoun<s n="n"/></r></p></e> -->
+      <e><p><l>au<s n="prn"/></l><r>you<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+      <!-- <e><p><l>au<s n="prn"/></l><r>2<s n="num"/><b/>pronoun<s n="n"/></r></p></e> -->
+      <e><p><l>i<s n="prn"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+      <!-- <e><p><l>i<s n="prn"/></l><r>3<s n="num"/><b/>pronoun<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>mandu<s n="prn"/></l><r>you<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/><b/>two<s n="num"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>mandu<s n="prn"/></l><r>2<s n="num"/><b/>pronoun<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>metoru<s n="prn"/></l><r>you<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/><b/>three<s n="num"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>metoru<s n="prn"/></l><r>2<s n="num"/><b/>pronoun<s n="n"/></r></p></e> -->
+      <e><p><l>mia vura<s n="prn"/></l><r>you<b/>all<s n="prn"/><s n="subj"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
+      <e><p><l>mia(te)<s n="prn"/></l><r>*y</r></p></e>
+      <!-- <e><p><l>mia(te)<s n="prn"/></l><r>2<s n="num"/><b/>pronoun<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>nandu<s n="prn"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/><b/>two<s n="num"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>nandu<s n="prn"/></l><r>1<s n="num"/><b/>*excl<b/>pronoun<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>sandu<s n="prn"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/><b/>two<s n="num"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>sandu<s n="prn"/></l><r>3<s n="adj"/><s n="ord"/><b/>person<s n="n"/><b/>dual<s n="adj"/><b/>pronoun<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>setoru<s n="prn"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/><b/>three<s n="num"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>setoru<s n="prn"/></l><r>3<s n="num"/><b/>pronoun<s n="n"/></r></p></e> -->
+      <e><p><l>sia<s n="prn"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+      <!-- <e><p><l>sia<s n="prn"/></l><r>3<s n="num"/><b/>pronoun<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>tandu<s n="prn"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/><b/>two<s n="num"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>tandu<s n="prn"/></l><r>1<s n="num"/><b/>*incl<b/>pronoun<s n="n"/></r></p></e> -->
+      <e><p><l>tata<s n="prn"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
+      <!-- <e><p><l>tata<s n="prn"/></l><r>1<s n="num"/><b/>*incl<b/>pronoun<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>tatoru<s n="prn"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="pl"/><b/>three<s n="num"/><s n="pl"/></r></p></e> -->
+      <!-- <e><p><l>tatoru<s n="prn"/></l><r>1<s n="num"/><b/>*incl<b/>pronoun<s n="n"/></r></p></e> -->
+      <e><p><l>yau<s n="prn"/></l><r>prpers<s n="prn"/><s n="subj"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+      <!-- <e><p><l>yau<s n="prn"/></l><r>1<s n="num"/><b/>pronoun<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>Mariava<s n="np"/></l><r>name<s n="n"/><b/>of<s n="pr"/><b/>a<s n="det"/><s n="ind"/><s n="sg"/><b/>stream<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>Wapupi<s n="np"/></l><r>island<s n="n"/><b/>off<s n="adv"/><b/>of<s n="pr"/><b/>*Windesi</r></p></e> -->
+      <!-- <e><p><l>Wariowi<s n="np"/></l><r>village<s n="n"/><b/>name<s n="n"/><b/>of<s n="pr"/><b/>a<s n="det"/><s n="ind"/><s n="sg"/><b/>stream<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>Wotuai<s n="np"/></l><r>name<s n="n"/><b/>of<s n="pr"/><b/>a<s n="det"/><s n="ind"/><s n="sg"/><b/>stream<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>Yob<s n="np"/></l><r>island<s n="n"/><b/>near<s n="adv"/><b/>*Wandamen</r></p></e> -->
+      <!-- <e><p><l>adiat<s n="v"/></l><r>bay<s n="n"/><b/>eat<s n="vblex"/><b/>fish<s n="n"/><b/>at<b/>night<s n="adv"/><b/>use<s n="vblex"/><s n="pprs"/><b/>a<s n="det"/><s n="ind"/><s n="sg"/><b/>lamp<s n="n"/></r></p></e> -->
+      <e><p><l>adiava<s n="v"/></l><r>hear<s n="vblex"/></r></p></e>
+      <e><p><l>adu<s n="v"/></l><r>trade<s n="n"/></r></p></e>
+      <e><p><l>amise<s n="v"/></l><r>order<s n="n"/></r></p></e>
+      <e><p><l>amise<s n="v"/></l><r>command<s n="n"/></r></p></e>
+      <!-- <e><p><l>ana<s n="v"/></l><r>shoot<s n="n"/><b/>(<s n="lpar"/><b/>arrow<s n="n"/></r></p></e> -->
+      <e><p><l>ananar<s n="v"/></l><r>groan<s n="vblex"/></r></p></e>
+      <e><p><l>ananar<s n="v"/></l><r>shout<s n="n"/></r></p></e>
+      <e><p><l>ane<s n="v"/></l><r>eat<s n="vblex"/></r></p></e>
+      <e><p><l>ania<s n="v"/></l><r>crawl<s n="n"/></r></p></e>
+      <!-- <e><p><l>ania<s n="v"/></l><r>walk<s n="n"/><b/>slowly<s n="adv"/></r></p></e> -->
+      <e><p><l>aniau<s n="v"/></l><r>study<s n="n"/></r></p></e>
+      <!-- <e><p><l>aniau<s n="v"/></l><r>go<s n="vblex"/><b/>to<b/>school<s n="adv"/></r></p></e> -->
+      <e><p><l>aniwar<s n="v"/></l><r>hide<s n="n"/></r></p></e>
+      <e><p><l>aniwar<s n="v"/></l><r>conceal<s n="vblex"/></r></p></e>
+      <e><p><l>aniwar<s n="v"/></l><r>keep<s n="n"/></r></p></e>
+      <e><p><l>anota<s n="v"/></l><r>wait<s n="n"/></r></p></e>
+      <e><p><l>anu<s n="v"/></l><r>weave<s n="vblex"/></r></p></e>
+      <e><p><l>apai<s n="v"/></l><r>run<s n="n"/></r></p></e>
+      <e><p><l>ape<s n="v"/></l><r>read<s n="adj"/></r></p></e>
+      <e><p><l>api<s n="v"/></l><r>eat<s n="vblex"/></r></p></e>
+      <!-- <e><p><l>ara<s n="v"/></l><r>stay<s n="n"/><b/>up<s n="adv"/></r></p></e> -->
+      <e><p><l>ara<s n="v"/></l><r>stay<s n="vblex"/><g/><b/>awake</r></p></e>
+      <e><p><l>ariarir<s n="v"/></l><r>patrol<s n="adj"/></r></p></e>
+      <e><p><l>aririarir<s n="v"/></l><r>patrol<s n="adj"/></r></p></e>
+      <e><p><l>as<s n="v"/></l><r>swim<s n="n"/></r></p></e>
+      <e><p><l>asiei<s n="v"/></l><r>sharpen<s n="vblex"/></r></p></e>
+      <e><p><l>asiwar<s n="v"/></l><r>lean<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>atore<s n="v"/></l><r>count<s n="n"/></r></p></e>
+      <e><p><l>avakir<s n="v"/></l><r>hang<s n="vblex"/></r></p></e>
+      <!-- <e><p><l>avi<s n="v"/></l><r>give<s n="vblex"/><g/><b/>birth<b/>to<s n="pr"/></r></p></e> -->
+      <!-- <e><p><l>avi<s n="v"/></l><r>be<s n="vbser"/><b/>parent<s n="n"/><b/>to<s n="pr"/></r></p></e> -->
+      <e><p><l>avute<s n="v"/></l><r>guard<s n="n"/></r></p></e>
+      <e><p><l>aware<s n="v"/></l><r>sew<s n="vblex"/></r></p></e>
+      <e><p><l>awawai<s n="v"/></l><r>patrol<s n="adj"/></r></p></e>
+      <e><p><l>awer<s n="v"/></l><r>hunt<s n="n"/></r></p></e>
+      <!-- <e><p><l>awi baru<s n="v"/></l><r>be<s n="vbser"/><b/>a<s n="det"/><s n="ind"/><s n="sg"/><b/>liar<s n="n"/><b/>or<s n="cnjcoo"/><b/>*deceiver</r></p></e> -->
+      <e><p><l>awia<s n="v"/></l><r>trick<s n="n"/></r></p></e>
+      <e><p><l>awia<s n="v"/></l><r>deceive<s n="vblex"/></r></p></e>
+      <e><p><l>bai<s n="v"/></l><r>carry<s n="vblex"/></r></p></e>
+      <e><p><l>bajor<s n="v"/></l><r>hide<s n="n"/></r></p></e>
+      <!-- <e><p><l>deriasi<s n="v"/></l><r>be<s n="vbser"/><b/>close<s n="adj"/><s n="sint"/></r></p></e> -->
+      <!-- <e><p><l>ena<s n="v"/></l><r>to<s n="pr"/><b/>sleep<s n="n"/></r></p></e> -->
+      <e><p><l>ena mia<s n="v"/></l><r>dream<s n="n"/></r></p></e>
+      <e><p><l>iravesie<s n="v"/></l><r>separate<s n="adj"/></r></p></e>
+      <e><p><l>iri<s n="v"/></l><r>choose<s n="vblex"/></r></p></e>
+      <e><p><l>isa<s n="v"/></l><r>stab<s n="n"/></r></p></e>
+      <e><p><l>isa<s n="v"/></l><r>harm<s n="n"/></r></p></e>
+      <e><p><l>isani<s n="v"/></l><r>spear<s n="n"/></r></p></e>
+      <e><p><l>isani<s n="v"/></l><r>stab<s n="n"/></r></p></e>
+      <e><p><l>isi<s n="v"/></l><r>wind<s n="n"/></r></p></e>
+      <!-- <e><p><l>isi<s n="v"/></l><r>as<s n="adv"/><b/>*papeda<b/>on<s n="adv"/><b/>chopstick<s n="n"/><s n="pl"/></r></p></e> -->
+      <e><p><l>ka<s n="v"/></l><r>throw<s n="n"/></r></p></e>
+      <e><p><l>kadadiri<s n="v"/></l><r>roll<s n="n"/></r></p></e>
+      <e><p><l>kais<s n="v"/></l><r>empty<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>kais<s n="v"/></l><r>go<s n="vblex"/><s n="pp"/></r></p></e>
+      <e><p><l>kamadiwa<s n="v"/></l><r>hide<s n="n"/></r></p></e>
+      <e><p><l>kamadiwa<s n="v"/></l><r>cover<s n="n"/></r></p></e>
+      <e><p><l>kamanam<s n="v"/></l><r>agree<s n="vblex"/></r></p></e>
+      <e><p><l>kamaru<s n="v"/></l><r>raw<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>kamaru<s n="v"/></l><r>unripe<s n="adj"/></r></p></e>
+      <!-- <e><p><l>kambarai<s n="v"/></l><r>not<s n="adv"/><b/>want<s n="n"/></r></p></e> -->
+      <e><p><l>kambarai<s n="v"/></l><r>dislike<s n="n"/></r></p></e>
+      <e><p><l>kanisu<s n="v"/></l><r>saliva<s n="n"/></r></p></e>
+      <e><p><l>kanisu<s n="v"/></l><r>spit<s n="n"/></r></p></e>
+      <e><p><l>kapori<s n="v"/></l><r>tie<s n="vblex"/><g/><b/>up</r></p></e>
+      <e><p><l>karamut<s n="v"/></l><r>scratch<s n="n"/></r></p></e>
+      <e><p><l>karier<s n="v"/></l><r>dive<s n="n"/></r></p></e>
+      <e><p><l>karieri<s n="v"/></l><r>urinate<s n="vblex"/></r></p></e>
+      <e><p><l>karipe<s n="v"/></l><r>bite<s n="n"/></r></p></e>
+      <e><p><l>kariria<s n="v"/></l><r>bad<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>kariria<s n="v"/></l><r>evil<s n="adj"/></r></p></e>
+      <e><p><l>karotui<s n="v"/></l><r>break<s n="n"/></r></p></e>
+      <!-- <e><p><l>karutarera<s n="v"/></l><r>turn<s n="n"/><b/>one's<s n="prn"/><s n="ind"/><s n="mf"/><s n="sg"/><b/>back<s n="adj"/><b/>on<s n="adv"/></r></p></e> -->
+      <e><p><l>kase<s n="v"/></l><r>shave<s n="vblex"/></r></p></e>
+      <e><p><l>kasie<s n="v"/></l><r>tie<s n="n"/></r></p></e>
+      <e><p><l>kasiou<s n="v"/></l><r>angry<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>kavera<s n="v"/></l><r>return<s n="n"/></r></p></e>
+      <e><p><l>kavera<s n="v"/></l><r>turn<s n="n"/></r></p></e>
+      <e><p><l>kavio<s n="v"/></l><r>speak<s n="vblex"/></r></p></e>
+      <e><p><l>kavio<s n="v"/></l><r>talk<s n="n"/></r></p></e>
+      <e><p><l>kavio<s n="v"/></l><r>word<s n="n"/></r></p></e>
+      <e><p><l>kavio<s n="v"/></l><r>language<s n="n"/></r></p></e>
+      <e><p><l>kavio manana<s n="v"/></l><r>whisper<s n="n"/></r></p></e>
+      <e><p><l>kaye<s n="v"/></l><r>scatter<s n="vblex"/></r></p></e>
+      <e><p><l>ke sasi<s n="v"/></l><r>defecate<s n="vblex"/></r></p></e>
+      <e><p><l>kerat<s n="v"/></l><r>scream<s n="n"/></r></p></e>
+      <e><p><l>kerat<s n="v"/></l><r>shout<s n="n"/></r></p></e>
+      <e><p><l>keri<s n="v"/></l><r>defecate<s n="vblex"/></r></p></e>
+      <!-- <e><p><l>kiare ru<s n="v"/></l><r>shave<s n="vblex"/><b/>one's<s n="prn"/><s n="ind"/><s n="mf"/><s n="sg"/><b/>head<s n="n"/></r></p></e> -->
+      <e><p><l>kivari<s n="v"/></l><r>get<s n="vblex"/></r></p></e>
+      <e><p><l>ko(re)<s n="v"/></l><r>take<s n="vblex"/></r></p></e>
+      <e><p><l>ko(re)<s n="v"/></l><r>hold<s n="n"/></r></p></e>
+      <e><p><l>kopa<s n="v"/></l><r>jump<s n="n"/></r></p></e>
+      <e><p><l>kotar<s n="v"/></l><r>fit<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>kotar<s n="v"/></l><r>narrow<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>kotar<s n="v"/></l><r>tight<s n="adv"/></r></p></e>
+      <e><p><l>kubira<s n="v"/></l><r>bathe<s n="vblex"/></r></p></e>
+      <e><p><l>kutu<s n="v"/></l><r>cut<s n="adj"/></r></p></e>
+      <e><p><l>kutu<s n="v"/></l><r>slice<s n="n"/></r></p></e>
+      <e><p><l>mamaya<s n="v"/></l><r>shy<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>mamaya<s n="v"/></l><r>ashamed<s n="adj"/></r></p></e>
+      <e><p><l>mamu<s n="v"/></l><r>fight<s n="n"/></r></p></e>
+      <e><p><l>mamu<s n="v"/></l><r>argue<s n="vblex"/></r></p></e>
+      <e><p><l>manau<s n="v"/></l><r>already<s n="adv"/></r></p></e>
+      <e><p><l>manggar<s n="v"/></l><r>yell<s n="vblex"/></r></p></e>
+      <!-- <e><p><l>marandi<s n="v"/></l><r>wear<s n="n"/><b/>jewelry<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>marandi<s n="v"/></l><r>decorate<s n="vblex"/><b/>oneself<s n="prn"/><s n="ref"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e> -->
+      <e><p><l>marariat<s n="v"/></l><r>soft<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>mararieti<s n="v"/></l><r>char<s n="vblex"/><s n="past"/></r></p></e>
+      <e><p><l>marera<s n="v"/></l><r>paralyse<s n="vblex"/><s n="past"/></r></p></e>
+      <e><p><l>marera<s n="v"/></l><r>soft<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>mari<s n="v"/></l><r>laugh<s n="n"/></r></p></e>
+      <e><p><l>mari kakumu<s n="v"/></l><r>smile<s n="n"/></r></p></e>
+      <e><p><l>marior<s n="v"/></l><r>tired<s n="adj"/></r></p></e>
+      <e><p><l>marior<s n="v"/></l><r>exhaust<s n="vblex"/><s n="pp"/></r></p></e>
+      <e><p><l>marova<s n="v"/></l><r>war<s n="n"/></r></p></e>
+      <!-- <e><p><l>marova<s n="v"/></l><r>(<s n="lpar"/><b/>a<s n="det"/><s n="ind"/><s n="sg"/><b/>war<s n="n"/></r></p></e> -->
+      <e><p><l>maroya<s n="v"/></l><r>roll<s n="n"/></r></p></e>
+      <e><p><l>marura<s n="v"/></l><r>drop<s n="n"/></r></p></e>
+      <e><p><l>marura<s n="v"/></l><r>fall<s n="n"/></r></p></e>
+      <e><p><l>marutu<s n="v"/></l><r>dive<s n="n"/></r></p></e>
+      <e><p><l>masa<s n="v"/></l><r>cook<s n="n"/></r></p></e>
+      <e><p><l>masivaveri<s n="v"/></l><r>resemble<s n="vblex"/></r></p></e>
+      <e><p><l>maso<s n="v"/></l><r>sit<s n="vblex"/></r></p></e>
+      <e><p><l>maso<s n="v"/></l><r>live<s n="vblex"/></r></p></e>
+      <!-- <e><p><l>masoi kariria<s n="v"/></l><r>be<s n="vbser"/><b/>sorrowful<s n="adj"/></r></p></e> -->
+      <e><p><l>masoi koya<s n="v"/></l><r>mourn<s n="vblex"/></r></p></e>
+      <!-- <e><p><l>masop<s n="v"/></l><r>break<s n="n"/><b/>(<s n="lpar"/><b/>wood<s n="n"/></r></p></e> -->
+      <e><p><l>masubat<s n="v"/></l><r>muddy<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>matai<s n="v"/></l><r>afraid<s n="adj"/></r></p></e>
+      <!-- <e><p><l>matitiotap<s n="v"/></l><r>be<s n="vbser"/><b/>destroy<s n="vblex"/><s n="pp"/></r></p></e> -->
+      <e><p><l>maye<s n="v"/></l><r>dance<s n="n"/></r></p></e>
+      <e><p><l>mayo<s n="v"/></l><r>put<s n="vblex"/><g/><b/>out</r></p></e>
+      <e><p><l>mayo<s n="v"/></l><r>turn<s n="vblex"/><g/><b/>off</r></p></e>
+      <e><p><l>meire<s n="v"/></l><r>play<s n="n"/></r></p></e>
+      <e><p><l>mesari<s n="v"/></l><r>alone<s n="adj"/></r></p></e>
+      <!-- <e><p><l>miri kierat<s n="v"/></l><r>belly<s n="n"/><b/>laugh<s n="n"/></r></p></e> -->
+      <e><p><l>mosi<s n="v"/></l><r>full<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>mun<s n="v"/></l><r>kill<s n="n"/></r></p></e>
+      <e><p><l>musane<s n="v"/></l><r>lose<s n="n"/></r></p></e>
+      <e><p><l>musane(u)<s n="v"/></l><r>regret<s n="n"/></r></p></e>
+      <!-- <e><p><l>na(i)<s n="v"/></l><r>be<s n="vbser"/><b/>at<s n="pr"/></r></p></e> -->
+      <e><p><l>na(i)<s n="v"/></l><r>reside<s n="vblex"/></r></p></e>
+      <e><p><l>nai<s n="v"/></l><r>disappear<s n="vblex"/></r></p></e>
+      <e><p><l>nanari<s n="v"/></l><r>make<s n="n"/></r></p></e>
+      <e><p><l>nanaripi<s n="v"/></l><r>work<s n="n"/></r></p></e>
+      <e><p><l>naya<s n="v"/></l><r>curse<s n="n"/></r></p></e>
+      <e><p><l>nei<s n="v"/></l><r>have<s n="vbhaver"/></r></p></e>
+      <e><p><l>newe<s n="v"/></l><r>have<s n="vbhaver"/></r></p></e>
+      <!-- <e><p><l>newi<s n="v"/></l><r>have<s n="vbhaver"/><b/>(<s n="lpar"/></r></p></e> -->
+      <e><p><l>newi<s n="v"/></l><r>mine<s n="n"/></r></p></e>
+      <e><p><l>newi<s n="v"/></l><r>yours<s n="adj"/><s n="pos"/><s n="pred"/></r></p></e>
+      <e><p><l>nganggat<s n="v"/></l><r>bother<s n="vblex"/></r></p></e>
+      <!-- <e><p><l>nomu<s n="v"/></l><r>you<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/><b/>have<s n="vbhaver"/></r></p></e> -->
+      <!-- <e><p><l>nomu<s n="v"/></l><r>2<s n="num"/><b/>*poss</r></p></e> -->
+      <e><p><l>nunu<s n="v"/></l><r>grill<s n="n"/></r></p></e>
+      <e><p><l>nunu<s n="v"/></l><r>cook<s n="n"/></r></p></e>
+      <e><p><l>o<s n="v"/></l><r>will<s n="n"/></r></p></e>
+      <e><p><l>o<s n="v"/></l><r>want<s n="vbmod"/><g/><b/>to</r></p></e>
+      <e><p><l>o<s n="v"/></l><r>do<s n="vblex"/></r></p></e>
+      <e><p><l>one<s n="v"/></l><r>give<s n="vblex"/></r></p></e>
+      <e><p><l>osa<s n="v"/></l><r>stand<s n="n"/></r></p></e>
+      <!-- <e><p><l>otabia<s n="v"/></l><r>pull<s n="n"/><b/>(<s n="lpar"/></r></p></e> -->
+      <e><p><l>otara<s n="v"/></l><r>kick<s n="n"/></r></p></e>
+      <e><p><l>otara<s n="v"/></l><r>boil<s n="n"/></r></p></e>
+      <e><p><l>otu<s n="v"/></l><r>break<s n="n"/></r></p></e>
+      <e><p><l>oyo<s n="v"/></l><r>say<s n="vblex"/></r></p></e>
+      <e><p><l>panande(re)<s n="v"/></l><r>forget<s n="vblex"/></r></p></e>
+      <!-- <e><p><l>pape<s n="v"/></l><r>wash<s n="n"/><b/>(<s n="lpar"/></r></p></e> -->
+      <!-- <e><p><l>papo<s n="v"/></l><r>move<s n="n"/><b/>forward<s n="adv"/></r></p></e> -->
+      <e><p><l>papo<s n="v"/></l><r>beat<s n="n"/></r></p></e>
+      <!-- <e><p><l>papo<s n="v"/></l><r>get<s n="vblex"/><b/>ahead<s n="adv"/></r></p></e> -->
+      <e><p><l>pera<s n="v"/></l><r>cut<s n="adj"/></r></p></e>
+      <e><p><l>peya<s n="v"/></l><r>quiet<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>pi(ri)<s n="v"/></l><r>place<s n="n"/></r></p></e>
+      <e><p><l>pi(ri)<s n="v"/></l><r>put<s n="vblex"/></r></p></e>
+      <e><p><l>poriri<s n="v"/></l><r>break<s n="n"/></r></p></e>
+      <e><p><l>posasa<s n="v"/></l><r>lift<s n="n"/></r></p></e>
+      <e><p><l>posasiei<s n="v"/></l><r>separate<s n="adj"/></r></p></e>
+      <e><p><l>pota<s n="v"/></l><r>sick<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>pota<s n="v"/></l><r>hurt<s n="vblex"/></r></p></e>
+      <!-- <e><p><l>pote<s n="v"/></l><r>catch<s n="n"/><b/>(<s n="lpar"/></r></p></e> -->
+      <!-- <e><p><l>pote<s n="v"/></l><r>go<s n="vblex"/><b/>fishing<s n="n"/></r></p></e> -->
+      <e><p><l>poya<s n="v"/></l><r>deaf<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>pu<s n="v"/></l><r>lift<s n="n"/></r></p></e>
+      <!-- <e><p><l>pui<s n="v"/></l><r>come<s n="vblex"/><g/><b/>from<b/>the<s n="det"/><s n="def"/><s n="sp"/><b/>rear<s n="adj"/></r></p></e> -->
+      <e><p><l>pui<s n="v"/></l><r>from<b/>behind<s n="adv"/></r></p></e>
+      <e><p><l>ra<s n="v"/></l><r>go<s n="vblex"/></r></p></e>
+      <e><p><l>ra pavi<s n="v"/></l><r>*slither</r></p></e>
+      <e><p><l>ra(ne)<s n="v"/></l><r>boil<s n="n"/></r></p></e>
+      <e><p><l>rama<s n="v"/></l><r>come<s n="vblex"/></r></p></e>
+      <e><p><l>rariorar<s n="v"/></l><r>wobble<s n="vblex"/></r></p></e>
+      <e><p><l>rariorar<s n="v"/></l><r>tremble<s n="vblex"/></r></p></e>
+      <e><p><l>rau<s n="v"/></l><r>marry<s n="vblex"/></r></p></e>
+      <e><p><l>rekamani<s n="v"/></l><r>wink<s n="n"/></r></p></e>
+      <e><p><l>repe<s n="v"/></l><r>lick<s n="vblex"/></r></p></e>
+      <e><p><l>rera<s n="v"/></l><r>untie<s n="vblex"/></r></p></e>
+      <e><p><l>rera<s n="v"/></l><r>open<s n="adj"/></r></p></e>
+      <!-- <e><p><l>resasi<s n="v"/></l><r>wash<s n="n"/><b/>(<s n="lpar"/></r></p></e> -->
+      <e><p><l>rewas<s n="v"/></l><r>cold<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>ri<s n="v"/></l><r>dance<s n="n"/></r></p></e>
+      <e><p><l>riesa<s n="v"/></l><r>cold<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>rina<s n="v"/></l><r>know<s n="vblex"/></r></p></e>
+      <e><p><l>rina<s n="v"/></l><r>understand<s n="vblex"/></r></p></e>
+      <!-- <e><p><l>rina<s n="v"/></l><r>be<s n="vbser"/><b/>clever<s n="adj"/><s n="sint"/></r></p></e> -->
+      <e><p><l>rira<s n="v"/></l><r>smell<s n="n"/></r></p></e>
+      <!-- <e><p><l>ririau<s n="v"/></l><r>be<s n="vbser"/><b/>marry<s n="vblex"/><s n="pp"/></r></p></e> -->
+      <e><p><l>riwan<s n="v"/></l><r>change<s n="n"/></r></p></e>
+      <e><p><l>ro<s n="v"/></l><r>sing<s n="vblex"/></r></p></e>
+      <e><p><l>roi<s n="v"/></l><r>sing<s n="vblex"/></r></p></e>
+      <e><p><l>rora<s n="v"/></l><r>hit<s n="n"/></r></p></e>
+      <!-- <e><p><l>rotu<s n="v"/></l><r>make<s n="n"/><b/>sound<s n="n"/></r></p></e> -->
+      <e><p><l>royare<s n="v"/></l><r>roll<s n="n"/></r></p></e>
+      <e><p><l>ruase<s n="v"/></l><r>divide<s n="vblex"/></r></p></e>
+      <e><p><l>rubatai<s n="v"/></l><r>lift<s n="n"/></r></p></e>
+      <e><p><l>rukusare<s n="v"/></l><r>press<s n="n"/></r></p></e>
+      <e><p><l>rukusare<s n="v"/></l><r>squeeze<s n="n"/></r></p></e>
+      <e><p><l>rure<s n="v"/></l><r>gather<s n="vblex"/></r></p></e>
+      <e><p><l>ruri<s n="v"/></l><r>light<s n="adv"/></r></p></e>
+      <e><p><l>rusasa<s n="v"/></l><r>lift<s n="n"/></r></p></e>
+      <e><p><l>rut<s n="v"/></l><r>hold<s n="n"/></r></p></e>
+      <e><p><l>rut<s n="v"/></l><r>grasp<s n="n"/></r></p></e>
+      <e><p><l>sa<s n="v"/></l><r>climb<s n="vblex"/></r></p></e>
+      <e><p><l>sa<s n="v"/></l><r>remain<s n="vblex"/></r></p></e>
+      <e><p><l>sa<s n="v"/></l><r>live<s n="vblex"/></r></p></e>
+      <e><p><l>sa(u)<s n="v"/></l><r>call<s n="n"/></r></p></e>
+      <!-- <e><p><l>sa(u)<s n="v"/></l><r>ask<s n="vblex"/><b/>permission<s n="n"/></r></p></e> -->
+      <e><p><l>sabaya<s n="v"/></l><r>crawl<s n="n"/></r></p></e>
+      <e><p><l>sabaya<s n="v"/></l><r>trap<s n="n"/></r></p></e>
+      <e><p><l>sai adidu<s n="v"/></l><r>wail<s n="n"/></r></p></e>
+      <!-- <e><p><l>sai kariria<s n="v"/></l><r>smell<s n="n"/><b/>bad<s n="adj"/><s n="sint"/></r></p></e> -->
+      <e><p><l>sai(s)<s n="v"/></l><r>cry<s n="n"/></r></p></e>
+      <e><p><l>sairara<s n="v"/></l><r>fragrant<s n="adj"/></r></p></e>
+      <e><p><l>samariari<s n="v"/></l><r>sweat<s n="n"/></r></p></e>
+      <e><p><l>samuai<s n="v"/></l><r>find<s n="vblex"/></r></p></e>
+      <e><p><l>samuai<s n="v"/></l><r>get<s n="vblex"/></r></p></e>
+      <e><p><l>samuai<s n="v"/></l><r>collect<s n="vblex"/></r></p></e>
+      <e><p><l>sanana<s n="v"/></l><r>stir<s n="n"/></r></p></e>
+      <e><p><l>sane miso<s n="v"/></l><r>love<s n="n"/></r></p></e>
+      <!-- <e><p><l>sane rusara<s n="v"/></l><r>sit<s n="vblex"/><b/>and<s n="cnjcoo"/><b/>think<s n="vblex"/></r></p></e> -->
+      <e><p><l>sanepai<s n="v"/></l><r>think<s n="vblex"/></r></p></e>
+      <e><p><l>sanepaya<s n="v"/></l><r>remember<s n="vblex"/></r></p></e>
+      <e><p><l>sanepaya<s n="v"/></l><r>think<s n="vblex"/><s n="past"/></r></p></e>
+      <e><p><l>sanevesie<s n="v"/></l><r>like<s n="adj"/></r></p></e>
+      <e><p><l>sanevesie<s n="v"/></l><r>be<s n="vblex"/><g/><b/>happy</r></p></e>
+      <!-- <e><p><l>sanevesie<s n="v"/></l><r>be<s n="vbser"/><b/>joyful<s n="adj"/></r></p></e> -->
+      <e><p><l>sapo(p)<s n="v"/></l><r>fly<s n="n"/></r></p></e>
+      <e><p><l>sarai<s n="v"/></l><r>dig<s n="vblex"/></r></p></e>
+      <!-- <e><p><l>sario<s n="v"/></l><r>carry<s n="vblex"/><b/>over<s n="adv"/><b/>the<s n="det"/><s n="def"/><s n="sp"/><b/>shoulder<s n="n"/></r></p></e> -->
+      <e><p><l>sasara<s n="v"/></l><r>err<s n="vblex"/></r></p></e>
+      <e><p><l>sasara<s n="v"/></l><r>make<s n="vblex"/><g/><b/>a<b/>mistake</r></p></e>
+      <e><p><l>sasara<s n="v"/></l><r>wrong<s n="adj"/></r></p></e>
+      <e><p><l>sase<s n="v"/></l><r>pant<s n="vblex"/></r></p></e>
+      <e><p><l>sasera<s n="v"/></l><r>look<s n="vblex"/><g/><b/>for</r></p></e>
+      <e><p><l>sasera<s n="v"/></l><r>seek<s n="vblex"/></r></p></e>
+      <e><p><l>sasi<s n="v"/></l><r>feces<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>sasi<s n="v"/></l><r>defecate<s n="vblex"/></r></p></e>
+      <e><p><l>sasie<s n="v"/></l><r>breathe<s n="vblex"/></r></p></e>
+      <e><p><l>sasiri<s n="v"/></l><r>see<s n="vblex"/></r></p></e>
+      <e><p><l>sasiri<s n="v"/></l><r>look<s n="adv"/></r></p></e>
+      <e><p><l>sasiri<s n="v"/></l><r>stare<s n="vblex"/></r></p></e>
+      <e><p><l>saviori<s n="v"/></l><r>whistle<s n="n"/></r></p></e>
+      <e><p><l>sayor<s n="v"/></l><r>see<s n="vblex"/></r></p></e>
+      <e><p><l>se<s n="v"/></l><r>see<s n="vblex"/></r></p></e>
+      <e><p><l>sera<s n="v"/></l><r>see<s n="vblex"/></r></p></e>
+      <e><p><l>sesa<s n="v"/></l><r>cough<s n="n"/></r></p></e>
+      <e><p><l>setawa<s n="v"/></l><r>guard<s n="n"/></r></p></e>
+      <e><p><l>seva<s n="v"/></l><r>open<s n="adj"/></r></p></e>
+      <e><p><l>siar<s n="v"/></l><r>splash<s n="vblex"/></r></p></e>
+      <e><p><l>simarai<s n="v"/></l><r>rub<s n="n"/></r></p></e>
+      <e><p><l>simarai<s n="v"/></l><r>Polish<s n="adj"/></r></p></e>
+      <e><p><l>simarai<s n="v"/></l><r>paint<s n="n"/></r></p></e>
+      <e><p><l>siorap<s n="v"/></l><r>sting<s n="n"/></r></p></e>
+      <!-- <e><p><l>siorap<s n="v"/></l><r>be<s n="vbser"/><b/>sharp<s n="adj"/><s n="sint"/></r></p></e> -->
+      <e><p><l>siwara<s n="v"/></l><r>grow<s n="vblex"/></r></p></e>
+      <e><p><l>so<s n="v"/></l><r>blow<s n="n"/></r></p></e>
+      <e><p><l>so<s n="v"/></l><r>throw<s n="n"/></r></p></e>
+      <!-- <e><p><l>sobata<s n="v"/></l><r>stand<s n="n"/><b/>up<s n="adv"/></r></p></e> -->
+      <e><p><l>soive<s n="v"/></l><r>bathe<s n="vblex"/></r></p></e>
+      <e><p><l>sokiare<s n="v"/></l><r>rub<s n="n"/></r></p></e>
+      <e><p><l>sokiare<s n="v"/></l><r>Polish<s n="adj"/></r></p></e>
+      <e><p><l>sokiare<s n="v"/></l><r>paint<s n="n"/></r></p></e>
+      <e><p><l>sokiase<s n="v"/></l><r>move<s n="n"/></r></p></e>
+      <e><p><l>sokiase<s n="v"/></l><r>slide<s n="n"/></r></p></e>
+      <e><p><l>som<s n="v"/></l><r>worship<s n="n"/></r></p></e>
+      <e><p><l>sonini<s n="v"/></l><r>wobble<s n="vblex"/></r></p></e>
+      <e><p><l>sora<s n="v"/></l><r>wear<s n="n"/></r></p></e>
+      <!-- <e><p><l>sore karou<s n="v"/></l><r>want<s n="n"/><b/>(<s n="lpar"/><b/>eat<s n="vblex"/></r></p></e> -->
+      <e><p><l>sore karou<s n="v"/></l><r>crave<s n="vblex"/></r></p></e>
+      <e><p><l>sori<s n="v"/></l><r>close<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>sosa<s n="v"/></l><r>bark<s n="n"/></r></p></e>
+      <e><p><l>sosoya<s n="v"/></l><r>tinkle<s n="n"/></r></p></e>
+      <!-- <e><p><l>sosoya<s n="v"/></l><r>ring<s n="n"/><b/>(<s n="lpar"/><b/>of<s n="pr"/><b/>ear<s n="n"/><s n="pl"/></r></p></e> -->
+      <e><p><l>sovera<s n="v"/></l><r>return<s n="n"/></r></p></e>
+      <e><p><l>sovera<s n="v"/></l><r>turn<s n="n"/></r></p></e>
+      <e><p><l>su<s n="v"/></l><r>enter<s n="vblex"/></r></p></e>
+      <e><p><l>suetawana<s n="v"/></l><r>keep<s n="vblex"/><g/><b/>watch</r></p></e>
+      <e><p><l>sum<s n="v"/></l><r>kiss<s n="n"/></r></p></e>
+      <e><p><l>sume<s n="v"/></l><r>smoke<s n="n"/></r></p></e>
+      <e><p><l>sume<s n="v"/></l><r>suck<s n="vblex"/></r></p></e>
+      <e><p><l>suvi<s n="v"/></l><r>exit<s n="n"/></r></p></e>
+      <e><p><l>suvi<s n="v"/></l><r>leave<s n="n"/></r></p></e>
+      <e><p><l>suvuan<s n="v"/></l><r>blow<s n="n"/></r></p></e>
+      <e><p><l>suwasi<s n="v"/></l><r>peel<s n="n"/></r></p></e>
+      <!-- <e><p><l>ta<s n="v"/></l><r>be<s n="vbser"/><b/>like<s n="adj"/></r></p></e> -->
+      <e><p><l>taisu<s n="v"/></l><r>miscarry<s n="vblex"/></r></p></e>
+      <e><p><l>tandor<s n="v"/></l><r>wake<s n="vblex"/><g/><b/>up</r></p></e>
+      <e><p><l>tandor<s n="v"/></l><r>surprised<s n="adj"/></r></p></e>
+      <e><p><l>tandor<s n="v"/></l><r>startle<s n="vblex"/><s n="past"/></r></p></e>
+      <e><p><l>tapu<s n="v"/></l><r>hug<s n="n"/></r></p></e>
+      <e><p><l>tapu<s n="v"/></l><r>grasp<s n="n"/></r></p></e>
+      <e><p><l>tapu<s n="v"/></l><r>hold<s n="n"/></r></p></e>
+      <!-- <e><p><l>tara<s n="v"/></l><r>pound<s n="n"/><b/>sago<s n="n"/></r></p></e> -->
+      <e><p><l>tare<s n="v"/></l><r>step<s n="n"/></r></p></e>
+      <e><p><l>tare<s n="v"/></l><r>stamp<s n="n"/></r></p></e>
+      <!-- <e><p><l>tarisu<s n="v"/></l><r>let<s n="vblex"/><b/>free<s n="adv"/></r></p></e> -->
+      <e><p><l>tata<s n="v"/></l><r>take<s n="vblex"/><s n="sep"/><g/><b/>off</r></p></e>
+      <e><p><l>tata<s n="v"/></l><r>remove<s n="vblex"/></r></p></e>
+      <e><p><l>tatare<s n="v"/></l><r>can<s n="vbmod"/><s n="pres"/>+not<s n="adv"/></r></p></e>
+      <e><p><l>tatira<s n="v"/></l><r>spy<s n="n"/></r></p></e>
+      <!-- <e><p><l>tatopa<s n="v"/></l><r>narrate<s n="vblex"/><b/>(<s n="lpar"/><b/>story<s n="n"/></r></p></e> -->
+      <!-- <e><p><l>tau tawa<s n="v"/></l><r>overlap<s n="n"/><b/>with<s n="pr"/></r></p></e> -->
+      <!-- <e><p><l>tau tawa<s n="v"/></l><r>be<s n="vbser"/><b/>underneath<s n="adv"/></r></p></e> -->
+      <e><p><l>tavavu<s n="v"/></l><r>cover<s n="n"/></r></p></e>
+      <e><p><l>tavera<s n="v"/></l><r>return<s n="n"/></r></p></e>
+      <!-- <e><p><l>tavi<s n="v"/></l><r>let<s n="vblex"/><b/>go<s n="vblex"/></r></p></e> -->
+      <e><p><l>taviar<s n="v"/></l><r>tilt<s n="vblex"/></r></p></e>
+      <e><p><l>tawa<s n="v"/></l><r>fall<s n="n"/></r></p></e>
+      <e><p><l>tenam<s n="v"/></l><r>live<s n="vblex"/></r></p></e>
+      <e><p><l>tenam<s n="v"/></l><r>life<s n="n"/></r></p></e>
+      <e><p><l>tera<s n="v"/></l><r>fall<s n="vblex"/><g/><b/>on</r></p></e>
+      <e><p><l>tera<s n="v"/></l><r>hit<s n="n"/></r></p></e>
+      <!-- <e><p><l>tera<s n="v"/></l><r>be<s n="vbser"/><b/>afflict<s n="vblex"/><s n="pp"/><b/>by<s n="adv"/></r></p></e> -->
+      <!-- <e><p><l>tere<s n="v"/></l><r>be<s n="vbser"/><b/>afflict<s n="vblex"/><s n="pp"/><b/>by<s n="adv"/></r></p></e> -->
+      <e><p><l>tipira<s n="v"/></l><r>*flick</r></p></e>
+      <!-- <e><p><l>tire<s n="v"/></l><r>pole<s n="n"/><b/>(<s n="lpar"/><b/>boat<s n="n"/></r></p></e> -->
+      <e><p><l>tisa<s n="v"/></l><r>stab<s n="n"/></r></p></e>
+      <e><p><l>tita<s n="v"/></l><r>open<s n="adj"/></r></p></e>
+      <e><p><l>titiai<s n="v"/></l><r>stick<s n="n"/></r></p></e>
+      <e><p><l>tob<s n="v"/></l><r>grow<s n="vblex"/></r></p></e>
+      <e><p><l>topa<s n="v"/></l><r>prepare<s n="vblex"/></r></p></e>
+      <e><p><l>tota<s n="v"/></l><r>butcher<s n="n"/></r></p></e>
+      <e><p><l>tupar<s n="v"/></l><r>appear<s n="vblex"/></r></p></e>
+      <e><p><l>turu<s n="v"/></l><r>open<s n="adj"/></r></p></e>
+      <e><p><l>tut<s n="v"/></l><r>deaf<s n="adj"/><s n="sint"/></r></p></e>
+      <!-- <e><p><l>tuwa<s n="v"/></l><r>deep<s n="adj"/><s n="sint"/><b/>fishing<s n="n"/></r></p></e> -->
+      <e><p><l>ubira<s n="v"/></l><r>appear<s n="vblex"/></r></p></e>
+      <e><p><l>ubira<s n="v"/></l><r>emerge<s n="vblex"/></r></p></e>
+      <e><p><l>unu(m)<s n="v"/></l><r>drink<s n="vblex"/></r></p></e>
+      <e><p><l>unusar<s n="v"/></l><r>force<s n="n"/></r></p></e>
+      <!-- <e><p><l>ur<s n="v"/></l><r>wear<s n="n"/><b/>(<s n="lpar"/><b/>ring<s n="n"/></r></p></e> -->
+      <e><p><l>urusara<s n="v"/></l><r>show<s n="n"/></r></p></e>
+      <e><p><l>usar<s n="v"/></l><r>chase<s n="n"/></r></p></e>
+      <e><p><l>uta<s n="v"/></l><r>ask<s n="vblex"/></r></p></e>
+      <e><p><l>utanusara<s n="v"/></l><r>ask<s n="vblex"/></r></p></e>
+      <e><p><l>uvietu<s n="v"/></l><r>force<s n="n"/></r></p></e>
+      <e><p><l>vabara<s n="v"/></l><r>swell<s n="n"/></r></p></e>
+      <e><p><l>varakare<s n="v"/></l><r>drop<s n="n"/></r></p></e>
+      <!-- <e><p><l>varo<s n="v"/></l><r>not<s n="adv"/><b/>exist<s n="vblex"/></r></p></e> -->
+      <e><p><l>vata<s n="v"/></l><r>lie<s n="vblex"/><g/><b/>down</r></p></e>
+      <e><p><l>vaune<s n="v"/></l><r>wake<s n="vblex"/><g/><b/>up</r></p></e>
+      <e><p><l>vavou<s n="v"/></l><r>go<s n="vblex"/><g/><b/>home</r></p></e>
+      <e><p><l>vawatatar<s n="v"/></l><r>naughty<s n="adj"/><s n="sint"/></r></p></e>
+      <!-- <e><p><l>vawatatar<s n="v"/></l><r>badly<s n="adv"/><b/>behave<s n="vblex"/><s n="past"/></r></p></e> -->
+      <e><p><l>ve<s n="v"/></l><r>become<s n="vblex"/></r></p></e>
+      <e><p><l>vediadi<s n="v"/></l><r>be<s n="vblex"/><g/><b/>born</r></p></e>
+      <e><p><l>vedior<s n="v"/></l><r>block<s n="n"/></r></p></e>
+      <e><p><l>vekapo<s n="v"/></l><r>hurt<s n="vblex"/></r></p></e>
+      <e><p><l>vekapo<s n="v"/></l><r>injure<s n="vblex"/><s n="past"/></r></p></e>
+      <e><p><l>venadi<s n="v"/></l><r>pray<s n="vblex"/></r></p></e>
+      <e><p><l>veprenta<s n="v"/></l><r>prepare<s n="vblex"/></r></p></e>
+      <!-- <e><p><l>vera tua<s n="v"/></l><r>pass<s n="n"/><b/>by<s n="adv"/></r></p></e> -->
+      <e><p><l>vereri<s n="v"/></l><r>empty<s n="adj"/><s n="sint"/></r></p></e>
+      <e><p><l>vesikop<s n="v"/></l><r>kick<s n="n"/></r></p></e>
+      <e><p><l>vesusa<s n="v"/></l><r>miss<s n="vblex"/></r></p></e>
+      <e><p><l>via<s n="v"/></l><r>go<s n="vblex"/><g/><b/>down</r></p></e>
+      <e><p><l>via<s n="v"/></l><r>descend<s n="vblex"/></r></p></e>
+      <e><p><l>viviare<s n="v"/></l><r>shine<s n="n"/></r></p></e>
+      <e><p><l>vo<s n="v"/></l><r>paddle<s n="vblex"/></r></p></e>
+      <e><p><l>vori<s n="v"/></l><r>buy<s n="n"/></r></p></e>
+      <e><p><l>voru<s n="v"/></l><r>die<s n="n"/></r></p></e>
+      <e><p><l>voru<s n="v"/></l><r>dead<s n="adj"/></r></p></e>
+      <e><p><l>vove<s n="v"/></l><r>sell<s n="vblex"/></r></p></e>
+      <e><p><l>vui<s n="v"/></l><r>write<s n="vblex"/></r></p></e>
+      <e><p><l>vuvu<s n="v"/></l><r>spill<s n="n"/></r></p></e>
+      <e><p><l>vuvu<s n="v"/></l><r>splash<s n="vblex"/></r></p></e>
 
       <e><re>[.\?;:!…¿¶]</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
       <e><re>,</re>          <p><l><s n="cm"/></l>  <r><s n="cm"/></r></p></e>
